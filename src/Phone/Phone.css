@@ -1,0 +1,102 @@
+@import "./CompApps/allApps.css";
+main{
+    position: relative;
+    border-radius: 5em;
+    box-shadow: 0em 0.2em 1em rgb(39, 38, 38);
+}
+#button_action{
+    position: absolute;
+    z-index: 1;
+    width: 0.25em;
+    height: 3em;
+    content: '';
+    top: 9em;
+    left: -0.2em;
+    border-radius: 1em 0 0 1em;
+    border: 0.1em solid #47423D;
+    box-shadow: 0 -0.1em 0.1em #47423D;
+    background-color: #DED7D1;
+}
+#button_v_up{
+    position: absolute;
+    z-index: 1;
+    width: 0.25em;
+    height: 6em;
+    content: '';
+    top: 13em;
+    left: -0.2em;
+    border-radius: 1em 0 0 1em;
+    border: 0.1em solid #47423D;
+    box-shadow: 0 -0.1em 0.1em #47423D;
+    background-color: #DED7D1;
+}
+#button_v_down{
+    position: absolute;
+    z-index: 1;
+    width: 0.25em;
+    height: 6em;
+    content: '';
+    top: 20em;
+    left: -0.2em;
+    border-radius: 1em 0 0 1em;
+    border: 0.1em solid #47423D;
+    box-shadow: 0 -0.1em 0.1em #47423D;
+    background-color: #DED7D1;
+}
+#button_lock{
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    width: 0.25em;
+    height: 6em;
+    content: '';
+    top: 15em;
+    right: -0.2em;
+    border-radius: 0 1em 1em 0;
+    border: 0.1em solid #47423D;
+    box-shadow: 0 -0.1em 0.1em #47423D;
+    background-color: #DED7D1;
+}
+#titanium{
+    border-radius: 3.8em;
+    border: 0.2em solid #c5bfb9;/*#DED7D1;*/
+}
+#phone{
+    position: relative;
+    width: 25em;
+    height: 50em;
+    overflow: hidden;
+
+    border-radius: 3.8em;
+    border: 0.8em solid black;/*#263036;*/
+    
+    box-shadow: inset 0em 0em 1em #000;
+
+    background-color: black;
+    background-image: var(--bg-image);
+    background-size:cover;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+
+    transition: all 1s ease-in-out;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+#cont_home{
+    position: relative;
+    width: 100%;
+    height: 50em;
+
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+#splide01{
+    margin-top: 4.5em;
+}
