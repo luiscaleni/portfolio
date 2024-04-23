@@ -1,6 +1,6 @@
-let currentDate = new Date() //Actualizar myDate.
-
 function myHour() {
+    let currentDate = new Date() //Actualizar myDate.
+
      let hour = currentDate.getHours() //hour actual
      let minutes = currentDate.getMinutes() //minutes actual
      
@@ -58,7 +58,10 @@ function myHour() {
     let myMyResultClock = hour +":"+minutes
     return myMyResultClock 
 }
+
 function myDate(){
+    let currentDate = new Date() //Actualizar myDate.
+
     //const currentYear = currentDate.getFullYear()
     let today = currentDate.getDate()
     let day = currentDate.getDay()
@@ -143,13 +146,18 @@ function update() { //función del temporizador
     let dateScreen = document.getElementById("dateScreen") //buscar elemento reloj
 
     let lockScreen = document.getElementById("lockScreen")
-
-    if (lockScreen.classList.contains("lockScreen")) {
-        dateScreen.innerHTML= myCurrentDate //incluir hour en elemento
-        hourScreen.innerHTML= myCurrentHour //incluir hour en elemento
-    }else if(lockScreen.classList.contains("unlockScreen")){
-            let hour =  document.getElementById("hour")
-            hour.innerHTML= myCurrentHour //incluir hour en elemento
+    
+    if (lockScreen) {
+        if (lockScreen.classList.contains("lockScreen")) {
+            dateScreen.innerHTML= myCurrentDate //incluir hour en elemento
+            hourScreen.innerHTML= myCurrentHour //incluir hour en elemento
+        }else if(lockScreen.classList.contains("unlockScreen")){
+                let hour =  document.getElementById("hour")
+                hour.innerHTML= myCurrentHour //incluir hour en elemento
+        }
+    }else{
+        let hour =  document.getElementById("hour")
+        hour.innerHTML= myCurrentHour
     }
 }
 

@@ -34,7 +34,7 @@ window.addEventListener("load", ()=>{
         }
     })
 
-    document.getElementById("unlockOption").addEventListener("click", ()=> {
+    document.getElementById("groupScreenDown").addEventListener("click", ()=> {
         lockScreen.classList.add("unlockScreen")
         lockScreen.classList.remove("lockScreen")
         setTimeout(() => {

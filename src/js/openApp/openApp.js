@@ -3,6 +3,7 @@ import Curriculum from "./fnOpenApp/Curriculum"
 import Camera from "./fnOpenApp/Camera"
 import Youtube from "./fnOpenApp/Youtube"
 import Atribution from "./fnOpenApp/Atribution"
+import Others from "./fnOpenApp/Other"
 
 export default function openApp(){
     if (document.getElementById("contFSReplace") !== null) {
@@ -27,6 +28,7 @@ export default function openApp(){
                         Atribution()
                         break;
                     default:
+                        Others()
                         break;
                 }
                 element.removeChild(elementChild)    
