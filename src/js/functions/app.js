@@ -13,7 +13,7 @@ window.addEventListener("load", ()=>{
         contToggleAndContFS = elm.closest(".contToggle")
         cloneContToggleAndContFS = contToggleAndContFS.cloneNode(true)
 
-        if(elm.id === "Camera" || elm.id === "Curriculum"){
+        if(elm.id === "Camera"){
             blackElm()
         }else{}
 

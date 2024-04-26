@@ -5,7 +5,7 @@ export default function Youtube(){
 
     if(id === "Youtube"){
         let iframe = document.createElement("iframe")
-        iframe.src='https://www.youtube-nocookie.com/embed/LY2XEQ_SSXA?si=mwSyNAYWeTL-z7hs'
+        iframe.src='https://www.youtube.com/embed/ocFG3yor--M?si=R0AgpiFBJk0l5Vj4'
 
         contFSReplace.appendChild(iframe)
     }

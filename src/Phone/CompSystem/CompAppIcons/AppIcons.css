@@ -28,14 +28,6 @@
     animation: effectOpen;
     animation-duration: 700ms;
 }
-#Curriculum{
-    width: 3.4em;
-    height: auto;
-    padding: 0.1em;
-    margin: 0.25em;
-    border-radius: 1em;
-    background-color: white;
-}
 
 .widget{
     width: 9em;

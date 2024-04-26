@@ -1,5 +1,4 @@
 import AppsData from "./fnOpenApp/AppsData"
-import Curriculum from "./fnOpenApp/Curriculum"
 import Camera from "./fnOpenApp/Camera"
 import Youtube from "./fnOpenApp/Youtube"
 import Atribution from "./fnOpenApp/Atribution"
@@ -15,9 +14,6 @@ export default function openApp(){
             const e = AppsData[index];
             if (elementChildId === e.name) {
                 switch (elementChildId) {
-                    case "Curriculum":
-                        Curriculum()
-                        break;
                     case "Camera":
                         Camera()
                         break;

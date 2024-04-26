@@ -28,7 +28,6 @@ export default function ContHome(){
                     <div className="container_list_app">
                         <AppIcons name="photos" classNameApp="appImg" id="Photos" text="Photos" />
                         <AppIcons name="youtube" classNameApp="appImg" id="Youtube" text="Youtube" />
-                        <AppIcons typeImage="jpg" name="curriculum" classNameApp="appImg" id="Curriculum" text="Curriculum" />
                     </div>
                 </SplideSlide>
                 <SplideSlide>

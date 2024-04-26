@@ -1,8 +1,5 @@
 const AppsData = [
     {
-        name: "Curriculum"
-    },
-    {
         name: "Camera"
     },
     {
