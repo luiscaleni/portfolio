@@ -23,6 +23,7 @@
     height: auto;
     margin: 0.25em;
     border-radius: 1em;
+    cursor: pointer;
 }
 .content_app_widget__focus{
     animation: effectOpen;

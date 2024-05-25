@@ -1,22 +1,25 @@
 import whiteElm from "./whiteElm"
 window.addEventListener("load", ()=>{
-    document.getElementById("buttonHome").style.display="none"
+    setTimeout(() => {
+        let buttonHome = document.getElementById("buttonHome")
+        buttonHome.style.display="none"
+    
     let contFSReplace
 
     setInterval(() => {
         contFSReplace = document.getElementById("contFSReplace")
     if(document.getElementById("lockScreen")){
             if(document.getElementById("lockScreen").getAttribute("class") === "lockScreen"){
-                document.getElementById("buttonHome").style.display="flex"
+                buttonHome.style.display="flex"
             }else if (contFSReplace){
-                document.getElementById("buttonHome").style.display="flex"
+                buttonHome.style.display="flex"
             }else{
-                document.getElementById("buttonHome").style.display="none"
+                buttonHome.style.display="none"
             }
         }
     }, 100)
 
-    document.getElementById("buttonHome").addEventListener("click", ()=> {
+    buttonHome.addEventListener("click", ()=> {
         if (contFSReplace !== null) {
             document.getElementById("nav").classList.remove("black_blur")
 
@@ -33,8 +36,8 @@ window.addEventListener("load", ()=>{
 
             contFSReplace.classList.add("hideApp")
             document.getElementsByClassName("hideapp").id=""
-            document.getElementById("buttonHome").style.display="none"
-            document.getElementById("buttonHome").style.backgroundColor="rgba(255, 255, 255, 0.5)"
+            buttonHome.style.display="none"
+            buttonHome.style.backgroundColor="rgba(255, 255, 255, 0.5)"
 
             setTimeout(() => {
                 contFSReplace.classList.remove("hideApp")
@@ -48,4 +51,5 @@ window.addEventListener("load", ()=>{
             }, 1000)
         }
     })
+}, 1000)
 })

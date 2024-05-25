@@ -1,4 +1,4 @@
-window.addEventListener("load", ()=>{
+/*window.addEventListener("load", */()=>{
 setTimeout(() => {
     document.getElementById("loader").style.display="none"
 }, 1000)
@@ -52,4 +52,4 @@ if (divFinder.getAttribute("display") === "block") {
 }else if(divFinder.getAttribute("display") === "none"){
     splidePagination.style.display="block"
 }*/
-})
+}/*)*/

@@ -1,8 +1,9 @@
-window.addEventListener("load", ()=>{
-    let lockScreen = document.getElementById("lockScreen")
-    lockScreen.classList.add("lockScreen")
-    document.getElementById("hour").textContent=""
-    document.getElementById("barBottomInfo").style.backgroundColor="white"
+window.addEventListener("load", (e)=>{
+    setTimeout(() => {
+        let lockScreen = document.getElementById("lockScreen")
+        lockScreen.classList.add("lockScreen")
+        document.getElementById("hour").textContent=""
+        document.getElementById("barBottomInfo").style.backgroundColor="white"
     
     document.getElementById("button_lock").addEventListener("click", ()=> { 
         if(lockScreen.getAttribute("class") === "lockScreen"){
@@ -42,4 +43,5 @@ window.addEventListener("load", ()=>{
             document.getElementById("barBottomInfo").style.backgroundColor="transparent"
         }, 1000);
     })
+}, 1000)
 })
