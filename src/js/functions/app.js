@@ -7,6 +7,7 @@ window.addEventListener("load", ()=>{
     let cloneContToggleAndContFS
     let lista = document.getElementsByClassName("app")
 
+    setTimeout(() => {    
     Array.from(lista).forEach(elm => 
         elm.addEventListener("click", (e)=>{
         contTotal = elm.closest(".contTotal")
@@ -38,4 +39,5 @@ window.addEventListener("load", ()=>{
             openApp()
         }, 1000)
     }))
+    }, 1000)
 })
