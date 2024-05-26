@@ -8,7 +8,7 @@ import { FilesetResolver, FaceLandmarker } from "https://cdn.jsdelivr.net/npm/@m
  */
 export default function Memoji(){
 function getViewportSizeAtDepth(camera, depth) {
-    const viewportHeightAtDepth = 1.5 * depth * Math.tan(THREE.MathUtils.degToRad(0.5 * camera.fov));
+    const viewportHeightAtDepth = 1 * depth * Math.tan(THREE.MathUtils.degToRad(0.5 * camera.fov));
     const viewportWidthAtDepth = viewportHeightAtDepth * camera.aspect;
     return new THREE.Vector2(viewportWidthAtDepth, viewportHeightAtDepth);
 }
@@ -206,7 +206,7 @@ function detectFaceLandmarks(time) {
     if (transformationMatrices && transformationMatrices.length > 0) {
         let matrix = new THREE.Matrix4().fromArray(transformationMatrices[0].data);
         // Example of applying matrix directly to the avatar
-        avatar.applyMatrix(matrix, { scale: 35 });
+        avatar.applyMatrix(matrix, { scale: 30 });
     }
     // Apply Blendshapes
     const blendshapes = landmarks.faceBlendshapes;
