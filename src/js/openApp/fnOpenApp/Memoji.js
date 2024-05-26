@@ -30,8 +30,8 @@ class BasicScene {
         this.lastTime = 0;
         this.callbacks = [];
         // Initialize the canvas with the same aspect ratio as the video input
-        this.height = 1280//window.innerHeight;
-        this.width =1280 //(this.height * 1280) / 430;
+        this.height = 1600//window.innerHeight;
+        this.width =1600 //(this.height * 1280) / 430;
         // Set up the Three.js scene, camera, and renderer
         this.scene = new THREE.Scene();
         this.camera = new THREE.PerspectiveCamera(60, this.width / this.height, 0.01, 5000);
@@ -206,7 +206,7 @@ function detectFaceLandmarks(time) {
     if (transformationMatrices && transformationMatrices.length > 0) {
         let matrix = new THREE.Matrix4().fromArray(transformationMatrices[0].data);
         // Example of applying matrix directly to the avatar
-        avatar.applyMatrix(matrix, { scale: 22 });
+        avatar.applyMatrix(matrix, { scale: 30 });
     }
     // Apply Blendshapes
     const blendshapes = landmarks.faceBlendshapes;
@@ -260,8 +260,8 @@ async function streamWebcamThroughFaceLandmarker() {
             audio: false,
             video: {
                 facingMode: "user",
-                width: 1280,
-                height: 1280
+                width: 1600,
+                height: 1600
             }
         });
         onAcquiredUserMedia(evt);
