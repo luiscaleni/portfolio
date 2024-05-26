@@ -7,17 +7,11 @@ window.addEventListener("load", ()=>{
         
         function fullScreen(element) {
             if (element.requestFullScreen) {
-                element.requestFullScreen();
-                localVideo.volume = 0.8;
-                localVideo.play();
+                element.requestFullScreen()
             } else if (element.mozRequestFullScreen) {
-                element.mozRequestFullScreen();
-                localVideo.volume = 0.8;
-                localVideo.play();
+                element.mozRequestFullScreen()
             } else if (element.webkitRequestFullScreen) {
-                element.webkitRequestFullScreen();
-                localVideo.volume = 0.8;
-                localVideo.play();
+                element.webkitRequestFullScreen()
             }
         }
 

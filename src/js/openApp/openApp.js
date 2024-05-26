@@ -1,8 +1,10 @@
 import AppsData from "./fnOpenApp/AppsData"
-import Camera from "./fnOpenApp/Camera"
+
 import Youtube from "./fnOpenApp/Youtube"
 import Atribution from "./fnOpenApp/Atribution"
 import Others from "./fnOpenApp/Other"
+import Camera from "./fnOpenApp/Camera"
+import Memoji from "./fnOpenApp/Memoji"
 
 export default function openApp(){
     if (document.getElementById("contFSReplace") !== null) {
@@ -16,6 +18,8 @@ export default function openApp(){
                 switch (elementChildId) {
                     case "Camera":
                         Camera()
+                        Memoji()
+                        //Iframe()
                         break;
                     case "Youtube":
                         Youtube()

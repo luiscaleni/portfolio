@@ -23,12 +23,12 @@ window.addEventListener("load", ()=>{
         if (contFSReplace !== null) {
             document.getElementById("nav").classList.remove("black_blur")
 
-            if (document.getElementById("videoDom") !== null) {
+            if (document.getElementById("video") !== null) {
                 whiteElm()
-                document.getElementById("videoDom").classList.add("hideAppCamera")
+                document.getElementById("video").classList.add("hideAppCamera")
                 
                 setTimeout(() => {
-                    document.getElementById("contFSReplace").remove(document.getElementById("videoDom"))
+                    document.getElementById("contFSReplace").remove(document.getElementById("video"))
                 }, 500)
         }else if(document.getElementById("imgCV") !== null){
                 whiteElm()
