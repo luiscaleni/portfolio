@@ -1,8 +1,8 @@
 #videoDom{
     position: absolute;
     z-index: 50;
-    width:65em;
-    height: 100%;
+    width: auto;
+    height: 100vh;
     background-color: black;
     transition: all ease-in-out 1s;
 

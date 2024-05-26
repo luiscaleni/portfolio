@@ -18,6 +18,8 @@
   --bg-color-a: rgba(48, 48, 48, 0.7);
   --bg-color-a2: rgba(48, 48, 48, 0.9);
   --blur: blur(15px);
+  --min-width: 25em;
+  --min-height: 50em;
 
 
   font-synthesis: none;

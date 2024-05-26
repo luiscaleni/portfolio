@@ -26,15 +26,26 @@ export default function ContHome(){
                         <AppIcons name="contacts" classNameApp="appImg" id="Contacts" text="Contacts" />
                     </div>
                     <div className="container_list_app">
-                        <AppIcons name="photos" classNameApp="appImg" id="Photos" text="Photos" />
                         <AppIcons name="youtube" classNameApp="appImg" id="Youtube" text="Youtube" />
+                        <AppIcons name="wallet" classNameApp="appImg" id="wallet" text="Wallet" />
+                        <AppIcons name="find-my" classNameApp="appImg" id="findMy" text="Find my" />
+                        <AppIcons name="news" classNameApp="appImg" id="news" text="News" />
+                    </div>
+                    <div className="container_list_app">
+                        <AppIcons name="health" classNameApp="appImg" id="health" text="Health" />
+                        <AppIcons name="photos" classNameApp="appImg" id="Photos" text="Photos" />
                     </div>
                 </SplideSlide>
                 <SplideSlide>
                     <div className="container_list_app">
                         <AppIcons name="calculator" classNameApp="appImg" id="Calculator" text="Calculator" />
                         <AppIcons name="weather" classNameApp="appImg" id="Weather" text="Weather" />
-                        <AppIcons name="xcode" classNameApp="appImg" id="Atribution" text="Atribuciones" />
+                        <AppIcons name="reminders" classNameApp="appImg" id="reminders" text="Reminders" />
+                        <AppIcons name="settings" classNameApp="appImg" id="settings" text="Settings" />
+                    </div>
+                    <div className="container_list_app">
+                        <AppIcons name="voice-memos" classNameApp="appImg" id="voiceMemos" text="Voice Memos" />
+                        <AppIcons name="xcode" classNameApp="appImg" id="Atribution" text="Atributions" />
                     </div>
                 </SplideSlide>
             </Splide>
