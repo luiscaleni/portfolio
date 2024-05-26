@@ -8,7 +8,7 @@ import { FilesetResolver, FaceLandmarker } from "https://cdn.jsdelivr.net/npm/@m
  */
 export default function Memoji(){
 function getViewportSizeAtDepth(camera, depth) {
-    const viewportHeightAtDepth = 1.5 * depth * Math.tan(THREE.MathUtils.degToRad(0.5 * camera.fov));
+    const viewportHeightAtDepth = 2 * depth * Math.tan(THREE.MathUtils.degToRad(0.5 * camera.fov));
     const viewportWidthAtDepth = viewportHeightAtDepth * camera.aspect;
     return new THREE.Vector2(viewportWidthAtDepth, viewportHeightAtDepth);
 }
