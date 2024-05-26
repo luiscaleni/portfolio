@@ -31,7 +31,7 @@ class BasicScene {
         this.callbacks = [];
         // Initialize the canvas with the same aspect ratio as the video input
         this.height = 932//window.innerHeight;
-        this.width =1656 //(this.height * 1280) / 430;
+        this.width =430 //(this.height * 1280) / 430;
         // Set up the Three.js scene, camera, and renderer
         this.scene = new THREE.Scene();
         this.camera = new THREE.PerspectiveCamera(60, this.width / this.height, 0.01, 5000);
@@ -260,7 +260,7 @@ async function streamWebcamThroughFaceLandmarker() {
             audio: false,
             video: {
                 facingMode: "user",
-                width: 1656,
+                width: 430,
                 height: 932
             }
         });
