@@ -25,10 +25,10 @@ window.addEventListener("load", ()=>{
             lockScreen.classList.add("unlockScreen")
             lockScreen.classList.remove("lockScreen")
             navigator.wakeLock.request('screen')
-            fullScreen(document.documentElement)
             setTimeout(() => {
                 lockScreen.style.display="none"
                 document.getElementById("barBottomInfo").style.backgroundColor="transparent"
+                fullScreen(document.documentElement)
             }, 1000);
         })
     }, 1000)
