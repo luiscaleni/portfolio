@@ -7,6 +7,9 @@ import { FilesetResolver, FaceLandmarker } from "https://cdn.jsdelivr.net/npm/@m
  * the camera.
  */
 export default function Memoji(){
+    let widthVideo = 1600;
+    let heightVideo = 1600;
+
 function getViewportSizeAtDepth(camera, depth) {
     const viewportHeightAtDepth = 1 * depth * Math.tan(THREE.MathUtils.degToRad(0.5 * camera.fov));
     const viewportWidthAtDepth = viewportHeightAtDepth * camera.aspect;
@@ -30,8 +33,8 @@ class BasicScene {
         this.lastTime = 0;
         this.callbacks = [];
         // Initialize the canvas with the same aspect ratio as the video input
-        this.height = 1600//window.innerHeight;
-        this.width =1600 //(this.height * 1280) / 430;
+        this.height = widthVideo//window.innerHeight;
+        this.width = heightVideo //(this.height * 1280) / 430;
         // Set up the Three.js scene, camera, and renderer
         this.scene = new THREE.Scene();
         this.camera = new THREE.PerspectiveCamera(60, this.width / this.height, 0.01, 5000);
@@ -260,8 +263,8 @@ async function streamWebcamThroughFaceLandmarker() {
             audio: false,
             video: {
                 facingMode: "user",
-                width: 1600,
-                height: 1600
+                width: widthVideo,
+                height: heightVideo
             }
         });
         onAcquiredUserMedia(evt);
