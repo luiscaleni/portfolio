@@ -2,5 +2,5 @@ if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
     console.log("Estás usando un dispositivo móvil!!")
 } else {
     console.log("No estás usando un móvil")
-    location.href ='../nomobile.html'
+    location.href ='./nomobile.html'
 }
