@@ -1,7 +1,8 @@
 #groupNotif{
     position: absolute;
-    width: var(--min-width);
+    width: 100vw;
     height: 7em;
+    min-width:var(--min-width);
     padding: 0.5em;
     opacity: 0.8;
     bottom: 8em;
