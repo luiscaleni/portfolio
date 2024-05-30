@@ -20,7 +20,7 @@
 }
 .appImg{
     width: 14vw;
-    width: 3.5em;
+    width: 4em;
     height: auto;
     margin: 0.25em;
     border-radius: 1em;
@@ -32,7 +32,7 @@
 }
 
 .widget{
-    width: 9em;
+    width: 10em;
     height: auto;
     border-radius: 2.2em;
     box-shadow: 0 0 0.6em #2b2b2b;

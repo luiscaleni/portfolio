@@ -75,7 +75,8 @@ main{
     box-shadow: inset 0em 0em 1em #000;
 
     background-color: black;
-    background-image: var(--bg-image);
+    background-image: url("/assets/wp/wp-iphone.png");
+    background-color: #871BE2;
     background-size:cover;
     background-position-x: 0;
     background-position-y: 0;

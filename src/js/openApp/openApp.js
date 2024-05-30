@@ -19,7 +19,6 @@ export default function openApp(){
                     case "Camera":
                         Camera()
                         Memoji()
-                        //Iframe()
                         break;
                     case "Youtube":
                         Youtube()

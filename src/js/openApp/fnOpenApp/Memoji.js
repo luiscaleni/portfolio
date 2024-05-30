@@ -198,7 +198,7 @@ class Avatar {
 let faceLandmarker;
 let video;
 const scene = new BasicScene();
-const avatar = new Avatar("https://assets.codepen.io/9177687/raccoon_head.glb", scene.scene);
+const avatar = new Avatar("https://models.readyplayer.me/66327bedc6a3e0f034f3f16e.glb", scene.scene);//https://assets.codepen.io/9177687/raccoon_head.glb
 function detectFaceLandmarks(time) {
     if (!faceLandmarker) {
         return;

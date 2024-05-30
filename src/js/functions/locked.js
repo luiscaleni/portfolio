@@ -1,4 +1,4 @@
-window.addEventListener("load", ()=>{
+window.addEventListener("load", () =>{
     setTimeout(() => {
         let lockScreen = document.getElementById("lockScreen")
         lockScreen.classList.add("lockScreen")
@@ -23,7 +23,10 @@ window.addEventListener("load", ()=>{
                 lockScreen.style.display="none"
                 document.getElementById("barBottomInfo").style.backgroundColor="transparent"
                 fullScreen(document.documentElement)
-            }, 1000);
+                /*
+                document.getElementById("news").style.right="0"
+                document.getElementById("news").style.bottom="0"*/
+            }, 1000)
         })
     }, 1000)
 })

@@ -14,7 +14,7 @@
 
 
   --border-radius: 2em;
-  --bg-image: url("/assets/wp/wp.png");
+  --bg-image: url("/assets/wp/wp-iphone.jpg");
   --bg-color-a: rgba(48, 48, 48, 0.7);
   --bg-color-a2: rgba(48, 48, 48, 0.9);
   --blur: blur(15px);
@@ -27,7 +27,27 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#loaderPage{
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  text-shadow: 0em 0em 1em black;
+  background-image: url("/assets/wp/wp-iphone-lockScreen.jpg");
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loaderPage > #lp-title{
+  width: auto;
+  height: 2em;
+  color: white;
+  font-size: 1em;
+}
+#loaderPage > #lp-title > #titleMetadatos{
+  font-size: 2em;
+}
 #root{
   width: 100vw;
   height: 100vh;

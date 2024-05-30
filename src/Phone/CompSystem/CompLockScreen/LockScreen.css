@@ -6,7 +6,7 @@
     min-width: var(--min-width);
     min-height: var(--min-height);
     background-color: black;
-    background-image: var(--bg-image);
+    background-image: url("/assets/wp/wp-iphone-lockScreen.png");
     background-size:cover;
     background-position-x: 0;
     background-position-y: 0;
