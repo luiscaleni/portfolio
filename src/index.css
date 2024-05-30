@@ -20,6 +20,7 @@
   --blur: blur(15px);
   --min-width: 25em;
   --min-height: 50em;
+  --bg-color: #8539db;
 
 
   font-synthesis: none;
@@ -33,7 +34,8 @@
   width: 100vw;
   height: 100vh;
   text-shadow: 0em 0em 1em black;
-  background-image: url("/assets/wp/wp-iphone-lockScreen.jpg");
+  background-color: var(--bg-color);
+  background-image: url("/assets/wp/wp-iphone-lockScreen.png");
 
   display: flex;
   justify-content: center;
@@ -95,4 +97,29 @@ body {
 
 .hide{
   display: none;
+}
+
+#content{
+  position: absolute;
+  z-index: 90;
+  width: 100vw;
+  height: 100vh;
+  background-color: #871BE2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#content > #nomobile-text{
+  width: 60vw;
+  font-size: 1.5em;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: #333;
+}
+
+#metadatos{
+  color: #ff42f1;
+  font-weight: bold;
 }
