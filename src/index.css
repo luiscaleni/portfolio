@@ -109,8 +109,6 @@ body {
 }
 
 canvas{
-  width: 100vw;
-  height: auto;
   overflow-y: hidden;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
