@@ -7,7 +7,7 @@ import { FilesetResolver, FaceLandmarker } from "https://cdn.jsdelivr.net/npm/@m
  * the camera.
  */
 export default function Memoji(){
-    let widthVideo = 1600;
+    let widthVideo = 932;
     let heightVideo = 1600;
 
 function getViewportSizeAtDepth(camera, depth) {
