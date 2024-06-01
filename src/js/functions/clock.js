@@ -157,7 +157,9 @@ function update() { //función del temporizador
         }
     }else{
         let hour =  document.getElementById("hour")
-        hour.innerHTML= myCurrentHour
+        if (hour) {
+            hour.innerHTML= myCurrentHour
+        }
     }
 }
 

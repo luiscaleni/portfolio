@@ -1,4 +1,3 @@
-import "./functions/devices"
 import "./functions/locked"
 
 import "./functions/clock"
@@ -6,3 +5,4 @@ import "./functions/buttonHome"
 import "./functions/app"
 
 import "./openApp/openApp"
+import "./functions/devices"

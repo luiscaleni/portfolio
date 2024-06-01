@@ -121,11 +121,12 @@ class Avatar {
             console.log();
             this.scene.add(gltf.scene);
             this.init(gltf);
-        }, 
+        }/*, 
         // Called while loading is progressing
         (progress) => console.log("Loading model...", 100.0 * (progress.loaded / progress.total), "%"), 
         // Called when loading has errors
-        (error) => console.error(error));
+        (error) => console.error(error)*/
+        );
     }
     init(gltf) {
         gltf.scene.traverse((object) => {
@@ -205,9 +206,9 @@ let video;
 const scene = new BasicScene();
 const avatar = new Avatar("./assets/avatars/raccoon_head.glb", scene.scene);
 if(avatar){
-    console.log(avatar)
+    console.log("Avatar ok")
 }else{
-    console.log("no hay nada")
+    console.log("Avatar error")
 }
 function detectFaceLandmarks(time) {
     if (!faceLandmarker) {

@@ -147,7 +147,12 @@
 }
 #contFS > .content_app_widget > span,
 #contFSReplace > .content_app_widget > span{
-    display: none;
+    max-width: 15em;
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #contFS > .content_app_widget > p,
 #contFSReplace > .content_app_widget > p{

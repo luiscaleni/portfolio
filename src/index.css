@@ -96,7 +96,7 @@ body {
   flex-direction: column;
 }
 #content > #nomobile-text{
-  width: 55vw;
+  width: 20em;
   font-size: 1.2em;
   padding: 1em;
   border-radius: 1em;
@@ -109,6 +109,7 @@ body {
 }
 
 canvas{
+  pointer-events: none;
   overflow-y: hidden;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
