@@ -1,6 +1,6 @@
 .contTotal{
     width: auto;
-    min-width: 5em;
+    min-width: 5.5em;
 }
 .contToggle{
     padding: 0.5em;
@@ -41,7 +41,7 @@
     color:white;
     padding-top: 0.2em;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:0.6em;
+    font-size:0.7em;
     padding: 0.1em;
     border-radius: 0.5em;
     text-shadow: 0 0 0.5em black;

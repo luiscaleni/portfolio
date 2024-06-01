@@ -58,7 +58,12 @@ class BasicScene {
         this.controls.update();
         // Add a video background
         const video = document.getElementById("video");
-        const inputFrameTexture = new THREE.VideoTexture(video);
+        const black = document.createElement("div")
+        black.style.width="100vw"
+        black.style.height="100vh"
+        black.style.backgroundColor="black"
+
+        const inputFrameTexture = new THREE.VideoTexture(black);
         if (!inputFrameTexture) {
             throw new Error("Failed to get the 'input_frame' texture!");
         }
@@ -198,7 +203,12 @@ class Avatar {
 let faceLandmarker;
 let video;
 const scene = new BasicScene();
-const avatar = new Avatar("https://assets.codepen.io/9177687/raccoon_head.glb", scene.scene);
+const avatar = new Avatar("./assets/avatars/raccoon_head.glb", scene.scene);
+if(avatar){
+    console.log(avatar)
+}else{
+    console.log("no hay nada")
+}
 function detectFaceLandmarks(time) {
     if (!faceLandmarker) {
         return;
@@ -209,7 +219,7 @@ function detectFaceLandmarks(time) {
     if (transformationMatrices && transformationMatrices.length > 0) {
         let matrix = new THREE.Matrix4().fromArray(transformationMatrices[0].data);
         // Example of applying matrix directly to the avatar
-        avatar.applyMatrix(matrix, { scale: 20 });
+        avatar.applyMatrix(matrix, { scale: 5 });
     }
     // Apply Blendshapes
     const blendshapes = landmarks.faceBlendshapes;

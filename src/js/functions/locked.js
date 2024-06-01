@@ -1,4 +1,4 @@
-window.addEventListener("load", () =>{
+window.addEventListener("load",()=>{
     setTimeout(() => {
         let lockScreen = document.getElementById("lockScreen")
         lockScreen.classList.add("lockScreen")
@@ -22,7 +22,7 @@ window.addEventListener("load", () =>{
             setTimeout(() => {
                 lockScreen.style.display="none"
                 document.getElementById("barBottomInfo").style.backgroundColor="transparent"
-                fullScreen(document.documentElement)
+                //NEED-fullScreen(document.documentElement)
                 /*
                 document.getElementById("news").style.right="0"
                 document.getElementById("news").style.bottom="0"*/

@@ -1,5 +1,4 @@
 import openApp from "../openApp/openApp"
-import blackElm from "./blackElm"
 
 window.addEventListener("load", ()=>{
     let contTotal
@@ -14,10 +13,6 @@ window.addEventListener("load", ()=>{
         contToggleAndContFS = elm.closest(".contToggle")
         cloneContToggleAndContFS = contToggleAndContFS.cloneNode(true)
 
-        if(elm.id === "Camera"){
-            blackElm()
-        }else{}
-
         if (elm.classList.contains("widget")) {
             e.target.parentNode.parentNode.parentNode.style.width="10em"
         }
@@ -29,7 +24,7 @@ window.addEventListener("load", ()=>{
         cloneContToggleAndContFS.classList.remove("contToggle")
 
         document.getElementById("phone").appendChild(contToggleAndContFS)
-        
+
         setTimeout(() => {
             document.getElementById("phone").appendChild(cloneContToggleAndContFS)
             contToggleAndContFS.id=""

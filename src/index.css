@@ -18,8 +18,8 @@
   --bg-color-a: rgba(48, 48, 48, 0.7);
   --bg-color-a2: rgba(48, 48, 48, 0.9);
   --blur: blur(15px);
-  --min-width: 25em;
-  --min-height: 50em;
+  --min-width: 24.375em;
+  --min-height: 52.75em;
   --bg-color: #8539db;
 
 
@@ -33,9 +33,14 @@
   z-index: 100;
   width: 100vw;
   height: 100vh;
+  min-width: var(--min-width);
+  min-height: var(--min-height);
   text-shadow: 0em 0em 1em black;
   background-color: var(--bg-color);
-  background-image: url("/assets/wp/wp-iphone-lockScreen.png");
+  background-size:cover;
+  background-position-x: 0;
+  background-position-y: 0;
+  background-repeat: no-repeat;
 
   display: flex;
   justify-content: center;
@@ -73,27 +78,6 @@ body {
   height:auto;
   background-color: black;
 }
-.loader {
-  position: absolute;
-  z-index: 1;
-  width: 3.5em;
-  height: 3.5em;
-  top: 50%;
-  border-radius: 50%;
-  border: 0.5em dotted #FFF;
-
-  animation: rotation 2s linear infinite;
-  display: none;
-}
-
-@keyframes rotation {
-  0% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(360deg);
-  }
-} 
 
 .hide{
   display: none;
@@ -122,4 +106,11 @@ body {
 #metadatos{
   color: #ff42f1;
   font-weight: bold;
+}
+
+canvas{
+  overflow-y: hidden;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
 }

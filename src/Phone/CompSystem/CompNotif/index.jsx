@@ -10,7 +10,7 @@ export default function Notif({imgName, title, text, index=""}){
     }else{
         classNotif="notif"
     }
-    imgNameSrc= "/assets/avatars/" + imgName + ".png"
+    imgNameSrc= "/assets/persons/" + imgName + ".png"
     return (
         <>
             <div className="contNotif">

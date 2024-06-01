@@ -16,7 +16,6 @@ export default function Phone(){
             
             <div id="titanium">
                 <div id="phone">
-                    <span className="loader" id="loader"></span>
                     <DynamicIsland />
                     <Nav />
                     <div id="cont_home">

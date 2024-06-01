@@ -7,19 +7,21 @@ divContent.id="content"
 divContent.innerHTML=nomobile
 
 if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
-    console.log("Estás usando un dispositivo móvil!!")
-    window.onload=()=>{
-        loaderPage.innerHTML='<p id="lp-title"><span id="titleMetadatos">#metadatos</span><br>Cargando ...</p>'
-        loaderPage.style.transition="all .5s ease-in-out"
+    console.log(navigator.userAgent)
+    loaderPage.style.backgroundImage= 'url("/assets/wp/wp-iphone-lockScreen.png")'
+    loaderPage.innerHTML='<p id="lp-title"><span id="titleMetadatos">#metadatos</span><br>Cargando ...</p>'
+    loaderPage.style.transition="all .5s ease-in-out"
+    window.addEventListener("load",()=>{
         setTimeout(() => {
             loaderPage.style.opacity="0"
             setTimeout(() => {
                 document.body.removeChild(loaderPage)
             }, 1000)
-        }, 3000)
-    }
+        }, 2000)
+    })
 } else {
     console.log("No estás usando un móvil")
-    root.appendChild(divContent)
     root.removeChild(main)
+    loaderPage.remove()
+    root.appendChild(divContent)
 }

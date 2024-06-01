@@ -14,22 +14,32 @@
 
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+#contElemLockScreen{
+    width: 100%;
+    height: 100%;
+    min-width: 26.875em;
+    
+    display: flex;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
 }
-
 #groupScreen{
-    width: 100vw;
-    height: 39em;
+    width: 100%;
+    height: auto;
+    min-height: 45em;
     margin-top: 5em;
 
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     flex-direction: column;
 }
 
 #groupScreenTop{
-    width: 100vw;
+    width: 100%;
     min-width: 25em;
     height: auto;
     opacity: 0.6;
@@ -44,7 +54,7 @@
 #dateScreen{
     width: 100%;
     height: auto;
-    font-size: 6vw; /*1.3em;*/
+    font-size: 1.9em; /*1.3em;*/
     font-weight: bold;
 
     display: flex;
@@ -54,7 +64,7 @@
 #hourScreen{
     width: 100%;
     height: 0.8em;
-    font-size: 32vw;/*6em;*/
+    font-size: 7em;/*6em;*/
     font-weight: bold;
     
 
@@ -71,7 +81,7 @@
 */
 #lockScreenMemoji{
     width: 100%;
-    height: 90vh;
+    height: 90%;
     min-height: 23em;
 
     display: flex;
@@ -79,9 +89,9 @@
     align-items: flex-start;
 }
 #lockScreenMemoji > #memoji{
-    width: 70vw;
+    width: 35vh;
     height: auto;
-    transform: translateY(-1.4em);
+    transform: translateY(-1.5em);
 }
 /* Fin - lockScreen Memoji*/
 
@@ -93,6 +103,7 @@
     position: absolute;
     bottom: 0;
     min-width: var(--min-width);
+    max-width:26.875em;
     height: 7em;
     padding-top: 0.5em;
 
@@ -102,7 +113,7 @@
     flex-direction: row;
 }
 .optionIconScreen{
-    width: 13vw;
+    width: 4em;
     height: auto;
     padding: 0.8em;
     border-radius: 3em;
@@ -119,8 +130,7 @@
 
 #unlockOption{
     width: auto;
-    height: 13vw;
-    font-size: 4.5vw;
+    height: 4em;
     cursor:pointer;
 
     display: flex;
