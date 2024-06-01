@@ -219,7 +219,7 @@ function detectFaceLandmarks(time) {
     if (transformationMatrices && transformationMatrices.length > 0) {
         let matrix = new THREE.Matrix4().fromArray(transformationMatrices[0].data);
         // Example of applying matrix directly to the avatar
-        avatar.applyMatrix(matrix, { scale: 5 });
+        avatar.applyMatrix(matrix, { scale: 15 });
     }
     // Apply Blendshapes
     const blendshapes = landmarks.faceBlendshapes;
