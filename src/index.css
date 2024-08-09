@@ -14,13 +14,13 @@
 
 
   --border-radius: 2em;
-  --bg-image: url("/assets/wp/wp-iphone.jpg");
+  --bg-image: url("/assets/wp/iOS-18.jpeg");
   --bg-color-a: rgba(48, 48, 48, 0.7);
   --bg-color-a2: rgba(48, 48, 48, 0.9);
   --blur: blur(15px);
   --min-width: 24.375em;
   --min-height: 52.75em;
-  --bg-color: #8539db;
+  --bg-color: black;
 
 
   font-synthesis: none;

@@ -6,11 +6,17 @@ let nomobile = '<p id="nomobile-text"><span id="metadatos">#metadatos</span> es 
 content.id="content"
 content.innerHTML=nomobile
 
-loaderPage.innerHTML='<p id="lp-title"><span id="titleMetadatos">#metadatos</span><br>Cargando ...</p>'
+loaderPage.innerHTML='<p id="lp-title"><span id="titleMetadatos">Porfolio</span><br>by Luis Caleni Velasquez</p>'
 loaderPage.style.transition="all .5s ease-in-out"
 
 if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
-    loaderPage.style.backgroundImage= 'url("/assets/wp/wp-iphone-lockScreen.png")'
+/*    main = document.getElementById("main")
+    loaderPage.remove()
+    root.appendChild(content)
+    root.removeChild(main)*/
+    
+} else {
+    //loaderPage.style.backgroundImage= 'url("/assets/wp/wp-iphone-lockScreen.png")'
     window.addEventListener("load",()=>{
         setTimeout(() => {
             loaderPage.style.opacity="0"
@@ -19,10 +25,4 @@ if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
             }, 1000)
         }, 2000)
     })    
-} else {
-    main = document.getElementById("main")
-
-    loaderPage.remove()
-    root.appendChild(content)
-    root.removeChild(main)
 }

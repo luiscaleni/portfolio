@@ -1,6 +1,8 @@
 @import "./CompApps/allApps.css";
 main{
     position: relative;
+    border-radius: 5em;
+    box-shadow: 0em 0.2em 1em rgb(39, 38, 38);
 }
 #button_action{
     position: absolute;
@@ -56,34 +58,31 @@ main{
     background-color: #DED7D1;
 }
 #titanium{
-    position: relative;
+    /*position: relative;
     width: 100vw;
     height: 100vh;
     max-width:26.875em;
-    max-height:58.25em;
-    /*border-radius: 3.8em;*/
-    /*border: 0.2em solid #c5bfb9;/*#DED7D1;*/
-
+    max-height:58.25em;*/
+    border-radius: 3.8em;
+    border: 0.2em solid #c5bfb9;
+/*
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 }
 #phone{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    min-width: var(--min-width);
-    min-height: var(--min-height);
+    position: relative;
+    width: 25em;
+    height: 50em;
     overflow: hidden;
 
-    /*border-radius: 3.8em;
-    /*border: 0.8em solid black;/*#263036;*/
+    border-radius: 3.8em;
+    border: 0.8em solid black;/*#263036;*/
     
     box-shadow: inset 0em 0em 1em #000;
 
     background-color: black;
-    background-color: var(--bg-color);
-    background-image: url("/assets/wp/wp-iphone.png");
+    background-image: var(--bg-image);
     background-size:cover;
     background-position-x: 0;
     background-position-y: 0;
@@ -96,4 +95,17 @@ main{
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+}
+#cont_home{
+    position: relative;
+    width: 100%;
+    height: 50em;
+
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+#splide01{
+    /*margin-top: 4.5em;*/
 }

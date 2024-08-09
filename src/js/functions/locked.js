@@ -13,11 +13,36 @@ window.addEventListener("load",()=>{
                 setTimeout(() => {
                     lockScreen.style.display="none"
                     document.getElementById("barBottomInfo").style.backgroundColor="transparent"
-                    //NEED-fullScreen(document.documentElement)
-                    /*
-                    document.getElementById("news").style.right="0"
-                    document.getElementById("news").style.bottom="0"*/
                 }, 1000)
+            })
+            document.getElementById("button_lock").addEventListener("click", ()=> { 
+                if(lockScreen.getAttribute("class") === "lockScreen"){
+                    lockScreen.classList.add("unlockScreen")
+                    lockScreen.classList.remove("lockScreen")
+                    if(document.getElementById("nav").getAttribute("class") === "" && document.getElementById("contFSReplace") !== null){
+                        setTimeout(() => {
+                            document.getElementById("nav").classList.add("black_blur")
+                        }, 1000);
+                    }
+                    
+                    setTimeout(() => {
+                        lockScreen.style.display="none"
+                        document.getElementById("barBottomInfo").style.backgroundColor="transparent"
+                    }, 800)
+                }else if (lockScreen.getAttribute("class") === "unlockScreen") {
+                    lockScreen.style.display="flex"
+                    lockScreen.classList.add("lockScreen")
+                    lockScreen.classList.remove("unlockScreen")
+                    if(document.getElementById("nav").getAttribute("class") === "black_blur"){
+                        document.getElementById("nav").classList.remove("black_blur")
+                    }
+                    setTimeout(() => {
+                        document.getElementById("hour").textContent=""
+                        document.getElementById("barBottomInfo").style.backgroundColor="white"
+                    }, 100)
+                }else{
+                    console.log("error lockScreen")
+                }
             })
         }
     }, 1000)

@@ -34,6 +34,7 @@ export default function ContHome(){
                     <div className="container_list_app">
                         <AppIcons name="health" classNameApp="appImg" id="health" text="Health" />
                         <AppIcons name="photos" classNameApp="appImg" id="Photos" text="Photos" />
+                        <AppIcons name="curriculum" classNameApp="appImg" id="Curriculum" text="Curriculum" />
                     </div>
                 </SplideSlide>
                 <SplideSlide>

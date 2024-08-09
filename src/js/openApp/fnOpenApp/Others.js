@@ -1,6 +1,5 @@
 export default function Others(){
-    let contFSReplace = document.getElementById("contFSReplace")
-    let textApp = contFSReplace.closest(".textApp")
-    
-    console.log(textApp)
+    let textApp = elementChild.childNodes[1]
+            textApp.textContent="Podes probar abriendo la Cámara."
+            console.log(textApp)
 }

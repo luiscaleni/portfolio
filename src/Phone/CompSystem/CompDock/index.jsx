@@ -1,5 +1,5 @@
 import React from "react";
-import './Dock.css'
+import './Dock.css';
 import AppIcons from "../CompAppIcons";
 
 export default function Dock(){
@@ -8,10 +8,10 @@ export default function Dock(){
         <>
             <div id="content_dock">
                 <div className="dock">
-                    <AppIcons typeImage="svg" name="safari" classNameApp="dockImg" id="Safari"/>
-                    <AppIcons typeImage="svg" name="apple-music" classNameApp="dockImg" id="AppleMusic"/>
-                    <AppIcons typeImage="svg" name="ios-message" classNameApp="dockImg" id="Message"/>               
-                    <AppIcons typeImage="svg" name="mail" classNameApp="dockImg" id="Mail"/>
+                    <AppIcons typeImage="svg" name="safari" classNameApp="appImg" id="Safari"/>
+                    <AppIcons typeImage="svg" name="apple-music" classNameApp="appImg" id="AppleMusic"/>
+                    <AppIcons typeImage="svg" name="ios-message" classNameApp="appImg" id="Message"/>               
+                    <AppIcons typeImage="svg" name="mail" classNameApp="appImg" id="Mail"/>
                 </div>
             </div>
         </>

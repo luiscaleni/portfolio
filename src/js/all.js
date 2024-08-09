@@ -5,4 +5,3 @@ import "./functions/buttonHome"
 import "./functions/app"
 
 import "./openApp/openApp"
-import "./functions/devices"

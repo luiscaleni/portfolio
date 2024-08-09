@@ -2,9 +2,8 @@ nav{
     position: absolute;
     z-index: 55;
     top: 0;
-    width: 100vw;
+    width: 25em;
     height: 4.5em;
-    min-width: var(--min-width);
     color: white;
     padding: 0 2em 0.9em 2em;
 
