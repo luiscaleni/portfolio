@@ -17,7 +17,6 @@
 #groupNotif > .contNotif > .notif{
     position: relative;
     z-index: 3;
-    cursor: pointer;
     width: 22em;
     height: auto;
     border-radius: 1.5em;

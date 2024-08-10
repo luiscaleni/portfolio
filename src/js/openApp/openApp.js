@@ -3,6 +3,9 @@ import Curriculum from "./fnOpenApp/Curriculum"
 import Camera from "./fnOpenApp/Camera"
 import Youtube from "./fnOpenApp/Youtube"
 import Atribution from "./fnOpenApp/Atribution"
+import Memoji from "./fnOpenApp/Memoji"
+
+import blackElm from "../functions/blackElm"
 
 export default function openApp(){
     if (document.getElementById("contFSReplace") !== null) {
@@ -16,9 +19,11 @@ export default function openApp(){
                 switch (elementChildId) {
                     case "Curriculum":
                         Curriculum()
+                        blackElm()
                         break;
                     case "Camera":
                         Camera()
+                        Memoji()
                         break;
                     case "Youtube":
                         Youtube()
@@ -38,5 +43,5 @@ export default function openApp(){
             let textApp = elementChild.childNodes[1]
             textApp.textContent="Podes probar abriendo la Cámara."
         }
-    }else{ return }
+    }
 }

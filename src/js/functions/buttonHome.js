@@ -3,13 +3,12 @@ window.addEventListener("load", ()=>{
     setTimeout(() => {
         let buttonHome = document.getElementById("buttonHome")
         if (buttonHome) {
-            buttonHome.style.display="none"
-
             let contFSReplace
+            buttonHome.style.display="none"
 
             setInterval(() => {
                 contFSReplace = document.getElementById("contFSReplace")
-            if(document.getElementById("lockScreen")){
+                if(document.getElementById("lockScreen")){
                     if(document.getElementById("lockScreen").getAttribute("class") === "lockScreen"){
                         buttonHome.style.display="flex"
                     }else if (contFSReplace){
@@ -18,27 +17,31 @@ window.addEventListener("load", ()=>{
                         buttonHome.style.display="none"
                     }
                 }
-            }, 100)
+            }, 1)
 
             buttonHome.addEventListener("click", ()=> {
-                if (contFSReplace !== null) {
-                    document.getElementById("nav").classList.remove("black_blur")
+                if (contFSReplace) {
+                    buttonHome.style.display="none"
+                    if(document.getElementById("nav").getAttribute("class") === "black_blur"){
+                        document.getElementById("nav").classList.remove("black_blur")
+                    }
 
-                    if (document.getElementById("video") !== null) {
+                    if (document.getElementById("video")) {
+                        const videoDom = document.getElementById("video")
+
                         whiteElm()
-                        document.getElementById("video").classList.add("hideAppCamera")
-                        
+                        videoDom.srcObject.getTracks()[0].stop()
+                        videoDom.classList.add("hideAppCamera")
+
                         setTimeout(() => {
-                            document.getElementById("contFSReplace").remove(document.getElementById("video"))
+                            document.getElementById("contFSReplace").remove(videoDom)
                         }, 500)
-                    }else if(document.getElementById("imgCV") !== null){
+                    }else if(document.getElementById("imgCV")){
                         whiteElm()
                     }
 
                     contFSReplace.classList.add("hideApp")
                     document.getElementsByClassName("hideapp").id=""
-                    buttonHome.style.display="none"
-                    buttonHome.style.backgroundColor="rgba(255, 255, 255, 0.5)"
 
                     setTimeout(() => {
                         contFSReplace.classList.remove("hideApp")
@@ -53,5 +56,5 @@ window.addEventListener("load", ()=>{
                 }
             })
         }
-    }, 1000)
+    }, 300)
 })

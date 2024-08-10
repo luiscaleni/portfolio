@@ -7,8 +7,8 @@ import { FilesetResolver, FaceLandmarker } from "https://cdn.jsdelivr.net/npm/@m
  * the camera.
  */
 export default function Memoji(){
-    let widthVideo = 932;
-    let heightVideo = 1600;
+    let widthVideo = 400;
+    let heightVideo = 800;
 
 function getViewportSizeAtDepth(camera, depth) {
     const viewportHeightAtDepth = 1 * depth * Math.tan(THREE.MathUtils.degToRad(0.5 * camera.fov));
@@ -33,8 +33,8 @@ class BasicScene {
         this.lastTime = 0;
         this.callbacks = [];
         // Initialize the canvas with the same aspect ratio as the video input
-        this.height = widthVideo//window.innerHeight;
-        this.width = heightVideo //(this.height * 1280) / 430;
+        this.height = heightVideo//window.innerHeight;
+        this.width = widthVideo //(this.height * 1280) / 430;
         // Set up the Three.js scene, camera, and renderer
         this.scene = new THREE.Scene();
         this.camera = new THREE.PerspectiveCamera(60, this.width / this.height, 0.01, 5000);
@@ -220,7 +220,7 @@ function detectFaceLandmarks(time) {
     if (transformationMatrices && transformationMatrices.length > 0) {
         let matrix = new THREE.Matrix4().fromArray(transformationMatrices[0].data);
         // Example of applying matrix directly to the avatar
-        avatar.applyMatrix(matrix, { scale: 15 });
+        avatar.applyMatrix(matrix, { scale: 10 });
     }
     // Apply Blendshapes
     const blendshapes = landmarks.faceBlendshapes;
