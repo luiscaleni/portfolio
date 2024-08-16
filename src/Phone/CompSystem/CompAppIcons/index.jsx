@@ -1,8 +1,10 @@
 import React from "react";
 import './AppIcons.css'
 
+let addClassApp
+
 export default function AppIcons({name, classNameApp, id="", text}){
-let addClassApp = classNameApp + " app"
+    addClassApp = classNameApp + " app"
 
 return (
     <>

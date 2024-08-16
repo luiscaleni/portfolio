@@ -1,16 +1,17 @@
 import React from "react"
 import './Notif.css'
 
-export default function Notif({imgName, title, text, index=""}){
-    let classNotif
-    let imgNameSrc
+let classNotif
+let imgNameSrc
 
+export default function Notif({imgName, title, text, index=""}){
     if (index) {
         classNotif=index
     }else{
         classNotif="notif"
     }
     imgNameSrc= "/assets/persons/" + imgName + ".png"
+    
     return (
         <>
             <div className="contNotif">

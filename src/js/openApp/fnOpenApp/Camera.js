@@ -5,10 +5,4 @@ export default function Camera(){
     videoDom.autoplay="true"
     videoDom.playsInline="true"
     contFSReplace.appendChild(videoDom)
-//video.srcObject.getTracks()[0].stop()
-    if(contFSReplace){
-        if (contFSReplace.getAttribute("id")==="video") {
-            console.log("bien")
-        }
-    }
 }

@@ -41,7 +41,7 @@ window.addEventListener("load",()=>{
                         document.getElementById("barBottomInfo").style.backgroundColor="white"
                     }, 100)
                 }else{
-                    console.log("error lockScreen")
+                    console.log("Error lockScreen")
                 }
             })
         }

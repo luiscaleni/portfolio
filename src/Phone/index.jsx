@@ -13,7 +13,6 @@ import ContHome from "./ContHome"
 export default function Phone(){
     return (
         <main id="main">
-
             <span id="button_action"></span>
             <span id="button_v_up" className="levelAudio"></span>
             <span id="button_v_down" className="levelAudio"></span>
@@ -32,7 +31,6 @@ export default function Phone(){
             </div>
             
             <span id="button_lock" title="Bloquear/Desbloquear iPhone"></span>
-
         </main>
     )
 }
