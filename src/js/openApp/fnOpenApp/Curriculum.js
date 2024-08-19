@@ -5,7 +5,6 @@ export default function Curriculum(){
     imgCV.id="imgCV"
     document.getElementById("nav").classList.add("black_blur")
     document.getElementById("contFSReplace").style.backgroundColor="white"
-    document.getElementById("buttonHome").style.backgroundColor="rgba(0, 0, 0, 0.7)"
 
     document.getElementById("contFSReplace").appendChild(imgCV)
 }

@@ -28,15 +28,13 @@ window.addEventListener("load", ()=>{
 
                     if (document.getElementById("video")) {
                         const videoDom = document.getElementById("video")
-
-                        whiteElm()
                         videoDom.srcObject.getTracks()[0].stop()
                         videoDom.classList.add("hideAppCamera")
 
                         setTimeout(() => {
                             document.getElementById("contFSReplace").remove(videoDom)
                         }, 500)
-                    }else if(document.getElementById("imgCV")){
+                    }else {
                         whiteElm()
                     }
 
@@ -48,7 +46,7 @@ window.addEventListener("load", ()=>{
                         contFSReplace.remove()
                     }, 500)
 
-                }else if (contFSReplace === null){
+                }else if (!contFSReplace){
                     document.getElementById("unlockBySliding").classList.add("up")
                     setTimeout(() => {
                         document.getElementById("unlockBySliding").classList.remove("up")

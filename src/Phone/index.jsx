@@ -1,14 +1,8 @@
-import React from "react"
+import {React, useEffect} from "react"
 import './Phone.css'
 
 import DynamicIsland from "./CompSystem/CompDynamicIsland"
-
-import LockScreen from "./CompSystem/CompLockScreen"
-import ButtonHome from "./CompSystem/CompButtonHome"
-import Nav from "./CompSystem/CompNav"
-import Dock from "./CompSystem/CompDock"
-
-import ContHome from "./ContHome"
+import IOS from "./CompSystem/CompIOS"
 
 export default function Phone(){
     return (
@@ -20,13 +14,7 @@ export default function Phone(){
             <div id="titanium">
                 <div id="phone">
                     <DynamicIsland />
-                    <Nav />
-                    <div id="cont_home">
-                        <ContHome />
-                        <Dock />
-                    </div>
-                    <LockScreen />
-                    <ButtonHome />
+                    <IOS />
                 </div>
             </div>
             

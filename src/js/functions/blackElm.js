@@ -1,4 +1,4 @@
-export default function blackElm(){
+export default function blackElm(){  
     document.getElementById("hour").style.color="black"
     document.getElementById("hour").style.textShadow="none"
     
@@ -6,4 +6,6 @@ export default function blackElm(){
     document.getElementById("signal").style.display="none"
     document.getElementById("wifiBlack").style.display="block"
     document.getElementById("signalBlack").style.display="block"
+
+    document.getElementById("buttonHome").style.backgroundColor="rgba(0, 0, 0, 0.5)"
 }
