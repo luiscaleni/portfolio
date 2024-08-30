@@ -1,60 +1,60 @@
 function myHour() {
     let currentDate = new Date() //Actualizar myDate.
 
-     let hour = currentDate.getHours() //hour actual
-     let minutes = currentDate.getMinutes() //minutes actual
-     
-     if(hour > 12 && hour <= 24){
+    let hour = currentDate.getHours() //hour actual
+    let minutes = currentDate.getMinutes() //minutes actual
+    
+    if(hour > 12 && hour <= 24){
         switch (hour) {
             case 12:
-                 hour = "12"
+                hour = "12"
                 break
             case 13:
-                 hour = "13"
+                hour = "13"
                 break
             case 14:
-                 hour = "14"
+                hour = "14"
                 break  
             case 15:
-                 hour = "15"
+                hour = "15"
                 break
             case 16:
-                 hour = "16"
+                hour = "16"
                 break
             case 17:
-                 hour = "17"
+                hour = "17"
                 break
             case 18:
-                 hour = "18"
+                hour = "18"
                 break  
             case 19:
-                 hour = "19"
+                hour = "19"
                 break
             case 20:
-                 hour = "20"
+                hour = "20"
                 break
             case 21:
-                 hour = "21"
+                hour = "21"
                 break
             case 22:
-                 hour = "22"
+                hour = "22"
                 break
             case 23:
-                 hour = "23"
+                hour = "23"
                 break
             case 24:
-                 hour = "00"
+                hour = "00"
                 break
             default:
                 break
         }
     }
-     if (minutes<10) { //dos cifras para el minutes
-         minutes="0"+minutes
-         }
+    if (minutes<10) { //dos cifras para el minutes
+        minutes="0"+minutes
+        }
 
-     //devolver los datos:
-   
+    //devolver los datos:
+
     let myMyResultClock = hour +":"+minutes
     return myMyResultClock 
 }
@@ -71,65 +71,65 @@ function myDate(){
     }
     switch (day) {
         case 0:
-             day = "Domingo"
+            day = "Domingo"
             break
         case 1:
-             day = "Lunes"
+            day = "Lunes"
             break
         case 2:
-             day = "Martes"
+            day = "Martes"
             break
         case 3:
-             day = "Miercoles"
+            day = "Miercoles"
             break  
         case 4:
-             day = "Jueves"
+            day = "Jueves"
             break
         case 5:
-             day = "Viernes"
+            day = "Viernes"
             break
         case 6:
-             day = "Sábado"
+            day = "Sábado"
             break
         default:
             break
     }
     switch (month) {
         case 1:
-             month = "Enero"
+            month = "Enero"
             break
         case 2:
-             month = "Febrero"
+            month = "Febrero"
             break
         case 3:
-             month = "Marzo"
+            month = "Marzo"
             break  
         case 4:
-             month = "Abril"
+            month = "Abril"
             break
         case 5:
-             month = "Mayo"
+            month = "Mayo"
             break
         case 6:
-             month = "Junio"
+            month = "Junio"
             break
         case 7:
-             month = "Julio"
+            month = "Julio"
             break  
         case 8:
-             month = "Agosto"
+            month = "Agosto"
             break
         case 9:
-             month = "Septiembre"
+            month = "Septiembre"
             break
         case 10:
-             month = "Octubre"
+            month = "Octubre"
             break
         case 11:
-             month = "Noviembre"
+            month = "Noviembre"
             break
         case 12:
-             month = "Diciembre"
+            month = "Diciembre"
             break
         default:
             break

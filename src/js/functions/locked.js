@@ -1,3 +1,5 @@
+import iconHomeEffect from "./iconHomeEffect"
+
 window.addEventListener("load",()=>{
     setTimeout(() => {
         let lockScreen = document.getElementById("lockScreen")
@@ -10,10 +12,14 @@ window.addEventListener("load",()=>{
                 lockScreen.classList.add("unlockScreen")
                 lockScreen.classList.remove("lockScreen")
                 navigator.wakeLock.request('screen')
+    
+                setTimeout(() => {
+                    iconHomeEffect()
+                }, 200);
                 setTimeout(() => {
                     lockScreen.style.display="none"
                     document.getElementById("barBottomInfo").style.backgroundColor="transparent"
-                }, 1000)
+                }, 700)
             })
             document.getElementById("button_lock").addEventListener("click", ()=> { 
                 if(lockScreen.getAttribute("class") === "lockScreen"){
@@ -22,13 +28,13 @@ window.addEventListener("load",()=>{
                     if(document.getElementById("nav").getAttribute("class") === "" && document.getElementById("contFSReplace") !== null){
                         setTimeout(() => {
                             document.getElementById("nav").classList.add("black_blur")
-                        }, 1000);
+                        }, 700);
                     }
                     
                     setTimeout(() => {
                         lockScreen.style.display="none"
                         document.getElementById("barBottomInfo").style.backgroundColor="transparent"
-                    }, 800)
+                    }, 700)
                 }else if (lockScreen.getAttribute("class") === "unlockScreen") {
                     lockScreen.style.display="flex"
                     lockScreen.classList.add("lockScreen")
@@ -45,5 +51,5 @@ window.addEventListener("load",()=>{
                 }
             })
         }
-    }, 1000)
+    }, 100)
 })

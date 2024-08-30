@@ -1,8 +1,8 @@
-import {React, useEffect} from "react"
-import './Phone.css'
+import React from "react"
+import "./Phone.css"
 
-import DynamicIsland from "./CompSystem/CompDynamicIsland"
-import IOS from "./CompSystem/CompIOS"
+import DynamicIsland from "./IOS/CompSystem/CompDynamicIsland"
+import IOS from "./IOS"
 
 export default function Phone(){
     return (

@@ -1,0 +1,110 @@
+#screenLoader {
+    position: absolute;
+    z-index: 500;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+#contLoader {
+    position: absolute;
+    z-index: 501;
+    width: 100%;
+    height: auto;
+    top: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#contLoader img {
+    width: 4em;
+    height: auto;
+}
+#contLoader > #contLoad{
+    width: 10em;
+    height: 0.2em;
+    max-width: 10em;
+    border-radius: 10em;
+    margin-top: 2em;
+    background-color: #333;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#contLoad > #load{
+    animation: load 5s normal forwards;
+    border-radius: 10em;
+    background: #ffffff;
+    height: 0.2em;
+    width: 0;
+}
+
+#copyright {
+    position: absolute;
+    z-index: 501;
+    width: 100vw;
+    height: auto;
+    bottom: 15vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#copyright #author {
+    width: auto;
+      min-height: 1em;
+      margin: 0.1em;
+      font-size: 0.8em;
+}
+
+@keyframes load {
+    0% {
+      width: 0; }
+    100% {
+      width: 100%; }
+}
+
+#app0, #app2, #app3, #app6, #app7{/*Izquierda superior*/
+    transform: scale(1.2) translateY(50em);
+}
+#app10, #app11, #app14, #app15{
+    transform: scale(1.2) translateY(50em);
+}
+
+
+#app1, #app4, #app5, #app8, #app9{ /*Derecha superior*/
+    transform: scale(1.2) translateY(50em);
+}
+#app12, #app13, #app16{ /*Derecha inferior*/
+    transform: scale(1.2) translateY(50em);
+
+}
+#app23, #app24, #app25,#app26{ /*Derecha inferior*/
+    transform: scale(1.2) translateY(50em);
+}
+
+
+.appNone{
+    transform: scale(1) translateY(0em);
+    animation: iconEffect;
+    animation-duration: 700ms;
+}
+@keyframes iconEffect{
+    0%{
+        transform: scale(1.2) translateY(50em);
+    }
+    80%{
+        transform: scale(0.9) translateY(0em);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

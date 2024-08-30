@@ -1,38 +1,43 @@
 import openApp from "../openApp/openApp"
 
 window.addEventListener("load", ()=>{
+    let contParentNode
     let contTotal
     let contToggleAndContFS
     let cloneContToggleAndContFS
     let lista = document.getElementsByClassName("app")
-
-    setTimeout(() => {    
-    Array.from(lista).forEach(elm => 
-        elm.addEventListener("click", (e)=>{
-        contTotal = elm.closest(".contTotal")
-        contToggleAndContFS = elm.closest(".contToggle")
-        cloneContToggleAndContFS = contToggleAndContFS.cloneNode(true)
-
-        if (elm.classList.contains("widget")) {
-            e.target.parentNode.parentNode.parentNode.style.width="10em"
+    setTimeout(() => {
+        for (let index = 0; index < lista.length; index++) {
+            const element = lista[index]
+            contParentNode = element.parentNode.parentNode.parentNode
+            contParentNode.id="app"+index
         }
-
-        contToggleAndContFS.id="contFS"
-        contToggleAndContFS.classList.remove("contToggle")
         
-        cloneContToggleAndContFS.id="contFSReplace"
-        cloneContToggleAndContFS.classList.remove("contToggle")
+        Array.from(lista).forEach(elm => elm.addEventListener("click", (e)=>{
+            contTotal = elm.closest(".contTotal")
+            contToggleAndContFS = elm.closest(".contToggle")
+            cloneContToggleAndContFS = contToggleAndContFS.cloneNode(true)
 
-        document.getElementById("phone").appendChild(contToggleAndContFS)
+            if (elm.classList.contains("widget")) {
+                e.target.parentNode.parentNode.parentNode.style.width="10em"
+            }
 
-        setTimeout(() => {
-            document.getElementById("phone").appendChild(cloneContToggleAndContFS)
-            contToggleAndContFS.id=""
-            contToggleAndContFS.classList.add("contToggle")
-            document.getElementById("phone").removeChild(contToggleAndContFS)
-            contTotal.appendChild(contToggleAndContFS)
-            openApp()
-        }, 1000)
-    }))
-    }, 1000)
+            contToggleAndContFS.id="contFS"
+            contToggleAndContFS.classList.remove("contToggle")
+            
+            cloneContToggleAndContFS.id="contFSReplace"
+            cloneContToggleAndContFS.classList.remove("contToggle")
+
+            document.getElementById("phone").appendChild(contToggleAndContFS)
+
+            setTimeout(() => {
+                document.getElementById("phone").appendChild(cloneContToggleAndContFS)
+                contToggleAndContFS.id=""
+                contToggleAndContFS.classList.add("contToggle")
+                document.getElementById("phone").removeChild(contToggleAndContFS)
+                contTotal.appendChild(contToggleAndContFS)
+                openApp()
+            }, 1000)
+        }))
+    }, 3000)
 })

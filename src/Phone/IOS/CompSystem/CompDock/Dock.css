@@ -11,9 +11,10 @@
 .dock{
     width: 88%;
     height: auto;
+    max-width: 21em;
     margin-bottom: 0.6em;
-    border-radius: 2em;
-    backdrop-filter: blur(0.2em);
+    border-radius: 1.5em;
+    backdrop-filter: blur(0.5em);
     background-color: var(--bg-color-a);
     
     display: flex;

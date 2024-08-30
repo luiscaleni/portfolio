@@ -1,4 +1,4 @@
-@import "./CompApps/allApps.css";
+@import "./IOS/CompApps/allApps.css";
 main{
     position: relative;
     border-radius: 5em;
@@ -96,9 +96,10 @@ main{
     align-content: center;
     flex-wrap: wrap;
 }
+
 #cont_home{
     position: relative;
-    width: 100%;
+    width: 25em;
     height: 50em;
 
     display: flex;
