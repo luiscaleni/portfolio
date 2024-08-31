@@ -144,11 +144,11 @@
 }
 .lockScreen{
     animation: lockScreen;
-    animation-duration: 700ms;
+    animation-duration: 800ms;
 }
 .unlockScreen{
     animation: unlockScreen;
-    animation-duration: 700ms;
+    animation-duration: 800ms;
 }
 @keyframes lockScreen{
     0%{

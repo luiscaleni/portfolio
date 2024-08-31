@@ -10,14 +10,14 @@ window.addEventListener("load", ()=>{
                 contFSReplace = document.getElementById("contFSReplace")
                 if(document.getElementById("lockScreen")){
                     if(document.getElementById("lockScreen").getAttribute("class") === "lockScreen"){
-                        buttonHome.style.display="flex"
+                            buttonHome.style.display="flex"
                     }else if (contFSReplace){
                         buttonHome.style.display="flex"
                     }else{
                         buttonHome.style.display="none"
                     }
                 }
-            }, 1)
+            }, 0)
 
             buttonHome.addEventListener("click", ()=> {
                 if (contFSReplace) {

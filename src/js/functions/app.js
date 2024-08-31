@@ -10,7 +10,7 @@ window.addEventListener("load", ()=>{
         for (let index = 0; index < lista.length; index++) {
             const element = lista[index]
             contParentNode = element.parentNode.parentNode.parentNode
-            contParentNode.id="app"+index
+            contParentNode.classList.add("iconHomePosition")
         }
         
         Array.from(lista).forEach(elm => elm.addEventListener("click", (e)=>{

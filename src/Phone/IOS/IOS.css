@@ -72,28 +72,10 @@
       width: 100%; }
 }
 
-#app0, #app2, #app3, #app6, #app7{/*Izquierda superior*/
+.iconHomePosition{
     transform: scale(1.2) translateY(50em);
 }
-#app10, #app11, #app14, #app15{
-    transform: scale(1.2) translateY(50em);
-}
-
-
-#app1, #app4, #app5, #app8, #app9{ /*Derecha superior*/
-    transform: scale(1.2) translateY(50em);
-}
-#app12, #app13, #app16{ /*Derecha inferior*/
-    transform: scale(1.2) translateY(50em);
-
-}
-#app23, #app24, #app25,#app26{ /*Derecha inferior*/
-    transform: scale(1.2) translateY(50em);
-}
-
-
-.appNone{
-    transform: scale(1) translateY(0em);
+.iconHomeEffect{
     animation: iconEffect;
     animation-duration: 700ms;
 }
@@ -101,7 +83,7 @@
     0%{
         transform: scale(1.2) translateY(50em);
     }
-    80%{
+    85%{
         transform: scale(0.9) translateY(0em);
     }
     100%{
