@@ -5,7 +5,14 @@ window.addEventListener("load", ()=>{
     let contTotal
     let contToggleAndContFS
     let cloneContToggleAndContFS
+    let splide01FirstChild
     let lista = document.getElementsByClassName("app")
+    
+    setTimeout(() => {
+        splide01FirstChild = document.getElementById("splide01").firstChild
+        splide01FirstChild.remove()
+    }, 5000)
+
     setTimeout(() => {
         for (let index = 0; index < lista.length; index++) {
             const element = lista[index]
@@ -37,7 +44,7 @@ window.addEventListener("load", ()=>{
                 document.getElementById("ios").removeChild(contToggleAndContFS)
                 contTotal.appendChild(contToggleAndContFS)
                 openApp()
-            }, 1000)
+            }, 500)
         }))
     }, 3000)
 })

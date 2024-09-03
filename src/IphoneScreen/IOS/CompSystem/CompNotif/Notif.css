@@ -2,7 +2,7 @@
     width: 25em;
     height: 7em;
     padding: 0.5em;
-    opacity: 0.8;
+    opacity: 0.9;
 
     display: flex;
     justify-content: center;
@@ -82,12 +82,14 @@
 #contentTextNotif > h4{
     width: 100%;
     height: auto;
-    font-size: 90%;
+    font-size: 95%;
+    font-weight: bold;
 }
 #contentTextNotif > p{
     width: 100%;
     height: auto;
-    font-size: 70%;
+    font-size: 80%;
+    font-weight: lighter;
 }
 
 

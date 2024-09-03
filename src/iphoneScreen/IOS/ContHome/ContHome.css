@@ -1,17 +1,19 @@
 @import "../CompApps/Camera/Camera.css";
 #cont_home{
     position: relative;
-    width: 25em;
-    height: 50em;
+    width: 100%;
+    height: 100%;
+    min-height: 50em;
     color: white;
 
     display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    
 }
 #navHome {
-    width: 25em;
+    width: 100%;
     height: 4.5em;
 }
 .content_windows{
@@ -26,10 +28,14 @@
 }
 #splide01{
     width: 100%;
-    height: 38.5em;
+    height: 75%;
+    min-height: 38.5em;
+
+    display: flex;
+    justify-content: center;
 }
 #splide01-track{
-    width: 25em;
+    width: 100%;
     height: 100%;
 }
 .splide{
@@ -38,9 +44,9 @@
 .splide__slide{
     width: 25em;
     height: 50em;
-    min-height:31.25em;
-    max-height:50em;
-    
+    min-height: 31.25em;
+    max-height: 50em;
+
     display: flex;
     justify-content: flex-start;
     align-content: center;
@@ -68,7 +74,7 @@
     height: 0.7em;
 }
 .container_list_app{
-    max-width: 20em;
+    max-width: 100vw;
     min-width: 20em;
     height: auto;
 
@@ -100,7 +106,7 @@
     z-index: 49;
     width: 100%;
     height:100%;
-    border-radius:2em;
+    
     overflow-y:auto;
     overflow-x: hidden;
     background-color: #000;

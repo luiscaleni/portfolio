@@ -20,7 +20,7 @@ window.addEventListener("load", ()=>{
             }, 0)
 
             buttonHome.addEventListener("click", ()=> {
-                if (contFSReplace) {
+                if (contFSReplace && document.getElementById("lockScreen").getAttribute("class") === "unlockScreen") {
                     buttonHome.style.display="none"
                     if(document.getElementById("nav").getAttribute("class") === "black_blur"){
                         document.getElementById("nav").classList.remove("black_blur")
@@ -46,7 +46,7 @@ window.addEventListener("load", ()=>{
                         contFSReplace.remove()
                     }, 500)
 
-                }else if (!contFSReplace){
+                }else if (!contFSReplace || (contFSReplace && document.getElementById("lockScreen").getAttribute("class") === "lockScreen")){
                     document.getElementById("unlockBySliding").classList.add("up")
                     setTimeout(() => {
                         document.getElementById("unlockBySliding").classList.remove("up")

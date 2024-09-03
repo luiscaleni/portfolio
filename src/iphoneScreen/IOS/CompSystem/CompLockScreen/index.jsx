@@ -17,7 +17,7 @@ export default function LockScreen(){
                         </div>
 
                         <div id="groupNotif">
-                            <Notif imgName="timCook" title="Tim Cook" text="Hello!, Wellcome to iPhone Pro Max web version"/>
+                            <Notif imgName="luis" title="Luis Caleni Velasquez" text="Hola, bienvenido a mi portfolio."/>
                             <Notif imgName="jhonyIve" title="Jhony Ive" text="I am Jonathan Paul Ive" index="indexTwo"/>
                             <Notif imgName="philSchiller" title="Phil Schiller" text="Hello!, I am Philip W. Schiller" index="indexThree"/>
                         </div>

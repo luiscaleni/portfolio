@@ -1,8 +1,8 @@
 #lockScreen{
     position: absolute;
     z-index: 50;
-    width: 25em;
-    height: 50em;
+    width: 100%;
+    height: 100%;
     background-color: black;
     background-size:cover;
     background-position-x: 0;
@@ -15,8 +15,12 @@
     flex-wrap: wrap;
 }
 #contElemLockScreen{
-    width: 25em;
-    height: 50em;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 #groupScreen{
     width: 25em;
@@ -154,7 +158,7 @@
 }
 @keyframes lockScreen{
     0%{
-        transform: translateY(-50em);
+        transform: translateY(-100%);
     }
     100%{
         transform: translateY(0em);
@@ -165,6 +169,6 @@
         transform: translateY(0em);
     }
     100%{
-        transform: translateY(-50em);
+        transform: translateY(-100%);
     }
 }
