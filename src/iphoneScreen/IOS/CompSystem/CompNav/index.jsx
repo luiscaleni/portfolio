@@ -8,6 +8,7 @@ import signal_black from "/assets/icons/signal_black.svg"
 export default function Nav(){
     return (
         <>
+        <div id="contNav">
         <nav id="nav">
             <p id="hour"></p>
             <div id="info">
@@ -28,6 +29,7 @@ export default function Nav(){
                 <span id="barBottomInfo"></span>
             </div>
         </nav>
+        </div>
         </>
     )
 }

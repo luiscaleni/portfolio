@@ -1,20 +1,26 @@
+#contNav{
+    position: relative;
+    width: 25em;
+    height: 50em;
+}
 nav{
     position: absolute;
     z-index: 55;
     top: 0;
-    width: 25em;
-    height: 4.5em;
+    width: 24em;
+    height: 5.2em;
     color: white;
     padding: 0 2em 0.9em 2em;
+    transition: all ease-in-out 100ms;
 
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 .black_blur{
-    transition: all ease-in-out 5ms;
-    background-color:rgba(151, 151, 151, 0.15);
-    backdrop-filter: blur(1em);
+    background-color: rgba(250, 250, 250, 0.5);
+    backdrop-filter: blur(0.2em);
+    border-radius: 3.8em 3.8em 0em 0em;
 }
 #hour{
     width: auto;

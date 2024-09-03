@@ -8,7 +8,7 @@ export default function ContHome(){
     return (
         <>
         <div id="cont_home">
-            <div className="content_windows" id="content_windows">
+                <div id="navHome"></div>
                 <Splide aria-label="Apps home">
                     <SplideSlide>
                         <div className="container_list_app">
@@ -52,8 +52,8 @@ export default function ContHome(){
                         </div>
                     </SplideSlide>
                 </Splide>
-            </div>
-            <Dock />
+                <Dock />
+            
         </div>
         </>
     )

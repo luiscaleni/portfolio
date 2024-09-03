@@ -4,7 +4,6 @@
     width: 25em;
     height: 50em;
     background-color: black;
-    background-image: var(--bg-image);
     background-size:cover;
     background-position-x: 0;
     background-position-y: 0;
@@ -15,7 +14,10 @@
     align-items: flex-start;
     flex-wrap: wrap;
 }
-
+#contElemLockScreen{
+    width: 25em;
+    height: 50em;
+}
 #groupScreen{
     width: 25em;
     height: 39em;
@@ -88,7 +90,7 @@
     position: absolute;
     bottom: 0;
     width: 25em;
-    height: 7em;
+    height: 6em;
     padding-top: 0.5em;
 
     display: flex;
@@ -144,25 +146,25 @@
 }
 .lockScreen{
     animation: lockScreen;
-    animation-duration: 800ms;
+    animation-duration: 600ms;
 }
 .unlockScreen{
     animation: unlockScreen;
-    animation-duration: 800ms;
+    animation-duration: 600ms;
 }
 @keyframes lockScreen{
     0%{
-        transform: translateY(-800px);
+        transform: translateY(-50em);
     }
     100%{
-        transform: translateY(0px);
+        transform: translateY(0em);
     }
 }
 @keyframes unlockScreen{
     0%{
-        transform: translateY(0px);
+        transform: translateY(0em);
     }
     100%{
-        transform: translateY(-800px);
+        transform: translateY(-50em);
     }
 }

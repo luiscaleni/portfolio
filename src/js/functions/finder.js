@@ -1,14 +1,10 @@
-document.addEventListener("load", ()=>{
-    setTimeout(() => {
-        document.getElementById("loader").style.display="none"
-    }, 1000)
-    
+setTimeout(() => {
     let divFinder = document.createElement("div")
     let imgFinder = document.createElement("img")
     let buscar = document.createElement("span")
-    let splidePagination = document.getElementsByClassName("splide__pagination--ltr")[0]
+    let splidePagination = document.getElementsByClassName("splide__pagination")[0]
     let childs = splidePagination.childNodes
-    
+
     divFinder.id="finder"
     imgFinder.src="/assets/iconsSystem/finder.png"
     buscar.textContent="Buscar"
@@ -52,4 +48,4 @@ document.addEventListener("load", ()=>{
     }else if(divFinder.getAttribute("display") === "none"){
         splidePagination.style.display="block"
     }
-    })
+}, 5000)

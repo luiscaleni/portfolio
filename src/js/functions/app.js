@@ -28,13 +28,13 @@ window.addEventListener("load", ()=>{
             cloneContToggleAndContFS.id="contFSReplace"
             cloneContToggleAndContFS.classList.remove("contToggle")
 
-            document.getElementById("phone").appendChild(contToggleAndContFS)
+            document.getElementById("ios").appendChild(contToggleAndContFS)
 
             setTimeout(() => {
-                document.getElementById("phone").appendChild(cloneContToggleAndContFS)
+                document.getElementById("ios").appendChild(cloneContToggleAndContFS)
                 contToggleAndContFS.id=""
                 contToggleAndContFS.classList.add("contToggle")
-                document.getElementById("phone").removeChild(contToggleAndContFS)
+                document.getElementById("ios").removeChild(contToggleAndContFS)
                 contTotal.appendChild(contToggleAndContFS)
                 openApp()
             }, 1000)

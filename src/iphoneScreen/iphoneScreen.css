@@ -1,0 +1,26 @@
+@import "./IOS/CompApps/allApps.css";
+#iphoneScreen{
+    position: relative;
+    width: 25em;
+    height: 50em;
+    overflow: hidden;
+
+    border-radius: 3.8em;
+    border: 0.8em solid black;/*#263036;*/
+    
+    box-shadow: inset 0em 0em 1em #000;
+
+    background-color: black;
+    background-size:cover;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+
+    transition: all 1s ease-in-out;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
