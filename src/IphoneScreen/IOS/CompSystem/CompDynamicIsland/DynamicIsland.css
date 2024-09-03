@@ -1,0 +1,29 @@
+#dynamic_island{
+    position: absolute;
+    z-index: 56;
+    width: 6.8em;
+    height: 2.4em;
+    top: 1em;
+    border-radius: 1.5em;
+    background-color: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#camera{
+    width: 0.5em; 
+    height: 0.5em;
+    margin: auto 0 auto 1em;
+    border-radius: 100%;
+    box-shadow:0 0 0.6em #541a63;
+    background: linear-gradient(70deg,#1d0218, #3f1249);
+}
+#sensor{
+    width: 0.5em; 
+    height: 0.5em;
+    margin: auto 1em auto 0;
+    border-radius: 100%;
+    box-shadow:0 0 0.6em #1e5a50;    
+    background:linear-gradient(70deg,#182221, #385552);
+}

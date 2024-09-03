@@ -2,7 +2,6 @@ import iconHomeEffect from "./iconHomeEffect"
 
 window.addEventListener("load",()=>{
     setTimeout(() => {
-        let timeout = 600
         let lockScreen = document.getElementById("lockScreen")
 
         if(lockScreen){
@@ -17,7 +16,7 @@ window.addEventListener("load",()=>{
                 setTimeout(() => {
                     lockScreen.style.display="none"
                     document.getElementById("barBottomInfo").style.backgroundColor="transparent"
-                }, timeout)
+                }, 500)
                 
                 setTimeout(() => {
                     iconHomeEffect("showIcons")
@@ -38,18 +37,18 @@ window.addEventListener("load",()=>{
                         setTimeout(() => {
                             document.getElementById("nav").classList.add("black_blur")
                             console.log("d")
-                        }, timeout)
+                        }, 500)
                     }
                     
                     setTimeout(() => {
                         lockScreen.style.display="none"
                         document.getElementById("barBottomInfo").style.backgroundColor="transparent"
-                    }, timeout)
+                    }, 500)
 
                 }else if (lockScreen.getAttribute("class") === "unlockScreen") {/* Si se presionó el button_lock con el dispositivo desbloqueado */
                     setTimeout(() => {
                         iconHomeEffect("hideIcons")
-                    }, timeout)
+                    }, 500)
                     
                     lockScreen.classList.add("lockScreen")
                     lockScreen.classList.remove("unlockScreen")
