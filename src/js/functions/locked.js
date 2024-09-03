@@ -66,8 +66,6 @@ window.addEventListener("load",()=>{
                     console.log("Error lockScreen")
                 }
             })
-
-
         }
     }, 100)
 })
