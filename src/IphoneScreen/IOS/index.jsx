@@ -14,7 +14,7 @@ export default function IOS(){
         let lockScreen = document.getElementById("lockScreen") 
         setTimeout(() => {
             screenLoader.remove()
-            lockScreen.style.backgroundImage="url('/assets/wp/iOS-18.jpeg')"
+            lockScreen.style.backgroundImage="url('/assets/wp/wp-light.jpg')"
         }, 5000)
     },[])
     

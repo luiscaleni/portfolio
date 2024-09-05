@@ -2,10 +2,10 @@
     position: absolute;
     z-index: 51;
     bottom: 0;
-    width: 40%;
-    height: 0.3em;
+    width: 38%;
+    height: 0.4em;
     max-width: 10em;
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
     border-radius: 2em;
     background-color: rgba(255, 255, 255, 0.5);
     transition: all ease-in-out 2s;

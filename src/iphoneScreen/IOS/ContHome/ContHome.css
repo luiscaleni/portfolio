@@ -28,7 +28,7 @@
 }
 #splide01{
     width: 100%;
-    height: 75%;
+    height: 100%;
     min-height: 38.5em;
 
     display: flex;
@@ -57,7 +57,7 @@
     display: none;
 }
 .splide__pagination{
-    bottom: 1.5em;
+    bottom: 12em;
     display: flex;
     justify-content: center;
     align-items: center;

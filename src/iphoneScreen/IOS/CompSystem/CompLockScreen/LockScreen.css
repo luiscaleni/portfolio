@@ -23,8 +23,10 @@
     align-items: flex-start;
 }
 #groupScreen{
-    width: 25em;
-    height: 39em;
+    width: 100%;
+    height: 100%;
+    min-width: 25em;
+    min-height: 39em;
     margin-top: 5em;
 
     display: flex;
@@ -33,8 +35,10 @@
 }
 
 #groupScreenTop{
-    width: 25em;
-    height: 8em;
+    width: 100%;
+    height: 13vh;
+    /*width: 25em;
+    height: 8em;*/
     opacity: 0.6;
     text-shadow: 0 0 0.5em #000;
 
@@ -73,14 +77,16 @@
 */
 #lockScreenMemoji{
     width: 100%;
-    height: 23em;
+    height: 58vh;
+    min-height: 23em;
+    
 
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 #lockScreenMemoji > #memoji{
-    width: 65%;
+    width: 28vh;
     height: auto;
     transform: translateY(-1.4em);
 }
@@ -94,7 +100,7 @@
     position: absolute;
     bottom: 0;
     width: 25em;
-    height: 6em;
+    height: 6.5em;
     padding-top: 0.5em;
 
     display: flex;
@@ -122,6 +128,7 @@
     width: auto;
     height: 3em;
     cursor: pointer;
+    padding: 0 1em 0 1em;
 
     display: flex;
     justify-content: center;

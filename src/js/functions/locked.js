@@ -1,8 +1,20 @@
 import iconHomeEffect from "./iconHomeEffect"
 
+function pasarPantallaCompleta(element) {
+    if (element.requestFullScreen) {
+        element.requestFullScreen()
+    } else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen()
+    } else if (element.webkitRequestFullScreen) {
+        element.webkitRequestFullScreen()
+    }
+}
+
 window.addEventListener("load",()=>{
     setTimeout(() => {
         let lockScreen = document.getElementById("lockScreen")
+        let addContIos = document.getElementsByClassName("addContIos")
+        document.getElementById("buttonHome").style.backgroundColor="rgba(0, 0, 0, 0.5)"
 
         if(lockScreen){
             lockScreen.classList.add("lockScreen")   
@@ -12,6 +24,10 @@ window.addEventListener("load",()=>{
             document.getElementById("unlockOption").addEventListener("click", ()=> {/* Si se presionó el unlockOption */
                 lockScreen.classList.add("unlockScreen")
                 lockScreen.classList.remove("lockScreen")
+
+                if(addContIos[0]){
+                    pasarPantallaCompleta(document.documentElement)
+                }
                 
                 setTimeout(() => {
                     lockScreen.style.display="none"
