@@ -1,10 +1,13 @@
 import React from "react"
 import './LockScreen.css'
 import Notif from "../CompNotif"
+import AlwaysOnDisplay from "../CompAlwaysOnDisplay"
+
 
 export default function LockScreen(){
     return (
         <>
+            <AlwaysOnDisplay />
             <div id="lockScreen">
                 <div id="contElemLockScreen">
                     <div id="groupScreen">

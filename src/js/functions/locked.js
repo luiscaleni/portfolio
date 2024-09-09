@@ -13,9 +13,22 @@ function pasarPantallaCompleta(element) {
 window.addEventListener("load",()=>{
     setTimeout(() => {
         let lockScreen = document.getElementById("lockScreen")
-        let addContIos = document.getElementsByClassName("addContIos")
+        let addContIos = document.getElementById("addContIos")
         document.getElementById("buttonHome").style.backgroundColor="rgba(0, 0, 0, 0.5)"
-
+        document.getElementById("alwaysOnDisplay").style.display="none"
+        
+        setTimeout(() => {
+            setInterval(() => {
+                if(addContIos){
+                    if (addContIos.offsetWidth > addContIos.offsetHeight) {
+                        document.getElementById("alwaysOnDisplay").style.display="flex"
+                    }else if (addContIos.offsetWidth < addContIos.offsetHeight) {
+                        document.getElementById("alwaysOnDisplay").style.display="none"
+                    }
+                }
+            }, 1);
+        }, 5000)
+        
         if(lockScreen){
             lockScreen.classList.add("lockScreen")   
             document.getElementById("hour").textContent=""
@@ -25,7 +38,7 @@ window.addEventListener("load",()=>{
                 lockScreen.classList.add("unlockScreen")
                 lockScreen.classList.remove("lockScreen")
 
-                if(addContIos[0]){
+                if(addContIos){
                     pasarPantallaCompleta(document.documentElement)
                 }
                 

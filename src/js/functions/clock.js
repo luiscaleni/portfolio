@@ -66,6 +66,8 @@ function myDate(){
     let today = currentDate.getDate()
     let day = currentDate.getDay()
     let month = currentDate.getMonth() + 1
+    let myResultDate
+    
     if(today < 10){
         today = "0" + today
     }
@@ -134,11 +136,23 @@ function myDate(){
         default:
             break
     }
+    
 
-    let myResultDate= day + " " + today + " de " + month
+    if(document.getElementById("alwaysOnDisplay").style.display === "flex"){
+        myResultDate= day + " " + today
+    }else{
+        myResultDate= day + " " + today + " de " + month
+    }
+
     return myResultDate
 }
 function update() { //función del temporizador
+    let currentDate = new Date() //Actualizar myDate.
+
+    //const currentYear = currentDate.getFullYear()
+    let today = currentDate.getDate()
+    let day = currentDate.getDay()
+
     let myCurrentHour = myHour() //recoger hour actual
     let myCurrentDate = myDate()
 
@@ -147,10 +161,22 @@ function update() { //función del temporizador
 
     let lockScreen = document.getElementById("lockScreen")
     
+    let hourLandscape = document.getElementById("hourLandscape")
+    let dateLandscape = document.getElementById("dateLandscape")
+    
+    let fuenteUno = new FontFace('coffeeSoda',"url(fonts/coffee_soda.ttf) format('truetype')" )
+    let fuenteDos = new FontFace('chocoShake',"url(fonts/choco_shake.ttf) format('truetype')" )
+
+    document.fonts.add(fuenteUno)
+    document.fonts.add(fuenteDos)
+
     if (lockScreen) {
         if (lockScreen.classList.contains("lockScreen")) {
             dateScreen.innerHTML= myCurrentDate //incluir hour en elemento
             hourScreen.innerHTML= myCurrentHour //incluir hour en elemento
+
+            hourLandscape.innerHTML = myCurrentHour 
+            dateLandscape.innerHTML = myCurrentDate
         }else if(lockScreen.classList.contains("unlockScreen")){
                 let hour =  document.getElementById("hour")
                 hour.innerHTML= myCurrentHour //incluir hour en elemento

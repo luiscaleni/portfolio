@@ -16,7 +16,7 @@ setTimeout(() => {
         root.appendChild(mainCreate)
         mainCreate.appendChild(contIos)
         contIos.removeAttribute("id")
-        contIos.classList.add("addContIos")
+        contIos.id="addContIos"
         contLoader.appendChild(p)
     }
 }, 0)
