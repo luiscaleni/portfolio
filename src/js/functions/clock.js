@@ -178,8 +178,11 @@ function update() { //función del temporizador
             hourLandscape.innerHTML = myCurrentHour 
             dateLandscape.innerHTML = myCurrentDate
         }else if(lockScreen.classList.contains("unlockScreen")){
-                let hour =  document.getElementById("hour")
-                hour.innerHTML= myCurrentHour //incluir hour en elemento
+            let hour =  document.getElementById("hour")
+            hour.innerHTML= myCurrentHour //incluir hour en elemento
+
+            hourLandscape.innerHTML = myCurrentHour 
+            dateLandscape.innerHTML = myCurrentDate
         }
     }else{
         let hour =  document.getElementById("hour")
