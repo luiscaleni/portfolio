@@ -14,21 +14,11 @@ window.addEventListener("load",()=>{
     setTimeout(() => {
         let lockScreen = document.getElementById("lockScreen")
         let addContIos = document.getElementById("addContIos")
+        let inIos = false
         document.getElementById("buttonHome").style.backgroundColor="rgba(0, 0, 0, 0.5)"
-        document.getElementById("alwaysOnDisplay").style.display="none"
-        
-        setTimeout(() => {
-            setInterval(() => {
-                if(addContIos){
-                    if (addContIos.offsetWidth > addContIos.offsetHeight) {
-                        document.getElementById("alwaysOnDisplay").style.display="flex"
-                    }else if (addContIos.offsetWidth < addContIos.offsetHeight) {
-                        document.getElementById("alwaysOnDisplay").style.display="none"
-                    }
-                }
-            }, 1);
-        }, 5000)
-        
+        let alwaysOnDisplay = document.getElementById("alwaysOnDisplay")
+        alwaysOnDisplay.style.display="none"        
+               
         if(lockScreen){
             lockScreen.classList.add("lockScreen")   
             document.getElementById("hour").textContent=""
@@ -37,9 +27,13 @@ window.addEventListener("load",()=>{
             document.getElementById("unlockOption").addEventListener("click", ()=> {/* Si se presionó el unlockOption */
                 lockScreen.classList.add("unlockScreen")
                 lockScreen.classList.remove("lockScreen")
+                navigator.wakeLock.request('screen')
 
                 if(addContIos){
                     pasarPantallaCompleta(document.documentElement)
+                    setTimeout(() => {
+                        inIos = true
+                    }, 1000)
                 }
                 
                 setTimeout(() => {
@@ -97,5 +91,45 @@ window.addEventListener("load",()=>{
                 })
             }
         }
+let cero = 0
+        setTimeout(() => {
+            let time = setInterval(() => {
+                if(addContIos){
+                    if (addContIos.offsetWidth > addContIos.offsetHeight) {
+                        alwaysOnDisplay.style.display="flex"
+                        if (inIos) {
+                            //console.log(inIos)
+                            setTimeout(() => {
+                                
+                                if(cero === 0 && inIos===true){
+                                    cero++
+                                    let divAlert = document.createElement("div")
+                                    let divOk = document.createElement("div")
+
+                                    divAlert.id= "alert"
+                                    divOk.id="ok"
+                                    divAlert.innerHTML="El dispositivo permanecerá encendido."
+                                    divOk.innerHTML="OK"
+
+                                    divAlert.appendChild(divOk)
+                                    alwaysOnDisplay.appendChild(divAlert)
+                                }
+                            }, 1000)
+                        }
+                    }else if (addContIos.offsetWidth < addContIos.offsetHeight) {
+                        alwaysOnDisplay.style.display="none"
+                    }
+                }
+            },0)
+        }, 5000)
+        let time = setInterval(() => {
+            if (document.getElementById("ok")) {
+                let alert = document.getElementById("alert")
+                document.getElementById("ok").addEventListener("click",()=>{
+                    alert.remove()
+                    clearInterval(time)
+                })
+            }
+        }, 0)
     }, 100)
 })

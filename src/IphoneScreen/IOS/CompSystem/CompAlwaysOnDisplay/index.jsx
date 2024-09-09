@@ -9,7 +9,7 @@ export default function AlwaysOnDisplay() {
                     <div id="hourLandscape"></div>
                     <div id="contMiniWidget">
                         <div id="dateLandscape"></div>
-                        <div id="infoLandscape">Luis Caleni</div>
+                        <div id="infoLandscape">by Luis Caleni</div>
                     </div>
                 </div>
             </div>           
