@@ -15,8 +15,10 @@ window.addEventListener("load",()=>{
         let lockScreen = document.getElementById("lockScreen")
         let addContIos = document.getElementById("addContIos")
         let inIos = false
-        document.getElementById("buttonHome").style.backgroundColor="rgba(0, 0, 0, 0.5)"
+        let cero = 0
         let alwaysOnDisplay = document.getElementById("alwaysOnDisplay")
+        
+        document.getElementById("buttonHome").style.backgroundColor="rgba(0, 0, 0, 0.5)"
         alwaysOnDisplay.style.display="none"        
                
         if(lockScreen){
@@ -91,11 +93,13 @@ window.addEventListener("load",()=>{
                 })
             }
         }
-let cero = 0
+
         setTimeout(() => {
-            let time = setInterval(() => {
+            setInterval(() => {
                 if(addContIos){
-                    if (addContIos.offsetWidth > addContIos.offsetHeight) {
+                    if (addContIos.offsetWidth < addContIos.offsetHeight) {
+                        alwaysOnDisplay.style.display="none"
+                    }else if (addContIos.offsetWidth > addContIos.offsetHeight) {
                         alwaysOnDisplay.style.display="flex"
                         if (inIos) {
                             //console.log(inIos)
@@ -116,8 +120,6 @@ let cero = 0
                                 }
                             }, 1000)
                         }
-                    }else if (addContIos.offsetWidth < addContIos.offsetHeight) {
-                        alwaysOnDisplay.style.display="none"
                     }
                 }
             },0)

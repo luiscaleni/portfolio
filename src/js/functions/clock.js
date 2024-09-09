@@ -147,12 +147,6 @@ function myDate(){
     return myResultDate
 }
 function update() { //función del temporizador
-    let currentDate = new Date() //Actualizar myDate.
-
-    //const currentYear = currentDate.getFullYear()
-    let today = currentDate.getDate()
-    let day = currentDate.getDay()
-
     let myCurrentHour = myHour() //recoger hour actual
     let myCurrentDate = myDate()
 
@@ -172,8 +166,8 @@ function update() { //función del temporizador
 
     if (lockScreen) {
         if (lockScreen.classList.contains("lockScreen")) {
-            dateScreen.innerHTML= myCurrentDate //incluir hour en elemento
             hourScreen.innerHTML= myCurrentHour //incluir hour en elemento
+            dateScreen.innerHTML= myCurrentDate //incluir hour en elemento
 
             hourLandscape.innerHTML = myCurrentHour 
             dateLandscape.innerHTML = myCurrentDate

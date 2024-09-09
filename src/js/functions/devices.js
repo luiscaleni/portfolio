@@ -9,7 +9,7 @@ setTimeout(() => {
 
     let p = document.createElement("p")
     p.id="adaptP"
-    p.textContent="Detected device. Adapting iOS"
+    p.textContent="Dispositivo movil detectado. Adaptando iOS"
 
     if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
         main.remove()

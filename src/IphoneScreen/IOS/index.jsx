@@ -30,7 +30,7 @@ export default function IOS(){
                         </div>
                     </div>
                     <div id="copyright">
-                        <p id="author">by Luis Caleni Velasquez</p>
+                        <p id="author">por Luis Caleni Velasquez</p>
                     </div>
                 </div>
                 <LockScreen />

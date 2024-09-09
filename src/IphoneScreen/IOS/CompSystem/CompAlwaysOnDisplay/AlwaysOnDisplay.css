@@ -47,11 +47,11 @@
 #contentWidgetLandscape > #hourLandscape{
     width: 65%;
     height: 100%;
-    font-size: 42vh;
+    font-size: 46vh;
     color: rgb(42, 108, 250);
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
 }
