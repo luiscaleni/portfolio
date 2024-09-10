@@ -31,14 +31,19 @@
 }
 
 #root{
+  position: relative;
   width: 100vw;
-  height: 100vh;
+  min-height: 93.5vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+@media (orientation: landscape) {
+  #root{
+      height: 100vh;
+  }
+}
 body {
   min-width: 320px;
   height:auto;

@@ -1,25 +1,14 @@
+import alwaysOnDisplay from "./alwaysOnDisplay"
 import iconHomeEffect from "./iconHomeEffect"
-
-function pasarPantallaCompleta(element) {
-    if (element.requestFullScreen) {
-        element.requestFullScreen()
-    } else if (element.mozRequestFullScreen) {
-        element.mozRequestFullScreen()
-    } else if (element.webkitRequestFullScreen) {
-        element.webkitRequestFullScreen()
-    }
-}
+import fullScreen from "./fullScreen"
 
 window.addEventListener("load",()=>{
     setTimeout(() => {
         let lockScreen = document.getElementById("lockScreen")
         let addContIos = document.getElementById("addContIos")
         let inIos = false
-        let cero = 0
-        let alwaysOnDisplay = document.getElementById("alwaysOnDisplay")
         
-        document.getElementById("buttonHome").style.backgroundColor="rgba(0, 0, 0, 0.5)"
-        alwaysOnDisplay.style.display="none"        
+        document.getElementById("buttonHome").style.backgroundColor="rgba(0, 0, 0, 0.5)"      
                
         if(lockScreen){
             lockScreen.classList.add("lockScreen")   
@@ -27,12 +16,12 @@ window.addEventListener("load",()=>{
             document.getElementById("barBottomInfo").style.backgroundColor="white"
             
             document.getElementById("unlockOption").addEventListener("click", ()=> {/* Si se presionó el unlockOption */
+                document.getElementById("root").style.height="100vh"
                 lockScreen.classList.add("unlockScreen")
                 lockScreen.classList.remove("lockScreen")
                 navigator.wakeLock.request('screen')
-
                 if(addContIos){
-                    pasarPantallaCompleta(document.documentElement)
+                    fullScreen(document.documentElement)
                     setTimeout(() => {
                         inIos = true
                     }, 1000)
@@ -93,45 +82,6 @@ window.addEventListener("load",()=>{
                 })
             }
         }
-
-        setTimeout(() => {
-            setInterval(() => {
-                if(addContIos){
-                    if (addContIos.offsetWidth < addContIos.offsetHeight) {
-                        alwaysOnDisplay.style.display="none"
-                    }else if (addContIos.offsetWidth > addContIos.offsetHeight) {
-                        alwaysOnDisplay.style.display="flex"
-                        if (inIos) {
-                            //console.log(inIos)
-                            setTimeout(() => {
-                                
-                                if(cero === 0 && inIos===true){
-                                    cero++
-                                    let divAlert = document.createElement("div")
-                                    let divOk = document.createElement("div")
-
-                                    divAlert.id= "alert"
-                                    divOk.id="ok"
-                                    divAlert.innerHTML="El dispositivo permanecerá encendido."
-                                    divOk.innerHTML="OK"
-
-                                    divAlert.appendChild(divOk)
-                                    alwaysOnDisplay.appendChild(divAlert)
-                                }
-                            }, 1000)
-                        }
-                    }
-                }
-            },0)
-        }, 5000)
-        let time = setInterval(() => {
-            if (document.getElementById("ok")) {
-                let alert = document.getElementById("alert")
-                document.getElementById("ok").addEventListener("click",()=>{
-                    alert.remove()
-                    clearInterval(time)
-                })
-            }
-        }, 0)
+        alwaysOnDisplay()
     }, 100)
 })

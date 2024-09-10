@@ -1,38 +1,18 @@
-import React, {useEffect} from "react"
+import React from "react"
 
 import "./IOS.css"
 import LockScreen from "./CompSystem/CompLockScreen"
 import ButtonHome from "./CompSystem/CompButtonHome"
 import Nav from "./CompSystem/CompNav"
 import ContHome from "./ContHome"
+import ScreenLoader from "./CompSystem/CompScreenLoader"
 
-
-
-export default function IOS(){
-   useEffect(()=>{
-        let screenLoader = document.getElementById("screenLoader")
-        let lockScreen = document.getElementById("lockScreen") 
-        setTimeout(() => {
-            screenLoader.remove()
-            lockScreen.style.backgroundImage="url('/assets/wp/wp-light.jpg')"
-        }, 5000)
-    },[])
-    
+export default function IOS(){    
     return (
         <>
         <div id="contIos">
             <div id="ios">
-                <div id="screenLoader">
-                    <div id="contLoader">
-                        <img src="./appleLogo.png"/>
-                        <div id="contLoad">
-                            <div id="load"></div>
-                        </div>
-                    </div>
-                    <div id="copyright">
-                        <p id="author">por Luis Caleni Velasquez</p>
-                    </div>
-                </div>
+                <ScreenLoader />
                 <LockScreen />
                 <Nav />
                 <ContHome />
