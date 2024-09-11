@@ -7,7 +7,7 @@ export default function ScreenLoader(){
         let lockScreen = document.getElementById("lockScreen") 
         setTimeout(() => {
             screenLoader.remove()
-            lockScreen.style.backgroundImage="url('/assets/wp/wp-light.jpg')"
+            lockScreen.style.backgroundImage="url('/assets/wp/wp-light.png')"
         }, 5000)
     },[])
 

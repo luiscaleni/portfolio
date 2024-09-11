@@ -5,8 +5,11 @@
     height: 50em;
     overflow: hidden;
 
-    border-radius: 3.8em;
-    border: 0.8em solid black;/*#263036;*/
+    border-radius: 3.5em;
+    border-top: 0.7em solid black;/*#263036;*/
+    border-right: 0.5em solid black;
+    border-bottom: 0.7em solid black;
+    border-left: 0.5em solid black;
     
     box-shadow: inset 0em 0em 1em #000;
 
@@ -16,7 +19,7 @@
     background-position-y: 0;
     background-repeat: no-repeat;
 
-    transition: all 1s ease-in-out;
+    transition: all ease-in-out 1s;
     
     display: flex;
     justify-content: center;

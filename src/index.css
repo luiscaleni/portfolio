@@ -15,7 +15,7 @@
   --width: 25em;
   --height: 50em;
   --border-radius: 2em;
-  --bg-image: url("/assets/wp/wp-light.jpg");
+  --bg-image: url("/assets/wp/wp-light.png");
   --bg-color-a: rgba(48, 48, 48, 0.5);
   --bg-color-a2: rgba(48, 48, 48, 0.9);
   --blur: blur(15px);
@@ -71,7 +71,7 @@ main{
   border-radius: 1em 0 0 1em;
   border: 0.1em solid #47423D;
   box-shadow: 0 -0.1em 0.1em #47423D;
-  background-color: #DED7D1;
+  background-color: #ffd5a5;
 }
 #button_v_up{
   position: absolute;
@@ -84,7 +84,7 @@ main{
   border-radius: 1em 0 0 1em;
   border: 0.1em solid #47423D;
   box-shadow: 0 -0.1em 0.1em #47423D;
-  background-color: #DED7D1;
+  background-color: #ffd5a5;
 }
 #button_v_down{
   position: absolute;
@@ -97,7 +97,7 @@ main{
   border-radius: 1em 0 0 1em;
   border: 0.1em solid #47423D;
   box-shadow: 0 -0.1em 0.1em #47423D;
-  background-color: #DED7D1;
+  background-color: #ffd5a5;
 }
 #button_lock{
   position: absolute;
@@ -111,7 +111,7 @@ main{
   border-radius: 0 1em 1em 0;
   border: 0.1em solid #47423D;
   box-shadow: 0 -0.1em 0.1em #47423D;
-  background-color: #DED7D1;
+  background-color: #ffd5a5;
 }
 #titanium{
   position: absolute;/*relative;*/
@@ -119,8 +119,8 @@ main{
   height: 50em;
   max-width:25em;
   max-height:50em;
-  border-radius: 3.8em;
-  border: 0.2em solid #c5bfb9;
+  border-radius: 3.5em;
+  border: 0.2em solid #DBA583;/*#c5bfb9;*/
   overflow: hidden;
 
   display: flex;

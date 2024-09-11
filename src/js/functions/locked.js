@@ -4,11 +4,9 @@ import fullScreen from "./fullScreen"
 
 window.addEventListener("load",()=>{
     setTimeout(() => {
+        //document.getElementById("alwaysOnDisplay").style.display="none"
         let lockScreen = document.getElementById("lockScreen")
-        let addContIos = document.getElementById("addContIos")
-        let inIos = false
-        
-        document.getElementById("buttonHome").style.backgroundColor="rgba(0, 0, 0, 0.5)"      
+        let addContIos = document.getElementById("addContIos")    
                
         if(lockScreen){
             lockScreen.classList.add("lockScreen")   
@@ -83,5 +81,5 @@ window.addEventListener("load",()=>{
             }
         }
         alwaysOnDisplay()
-    }, 100)
+    }, 0)
 })

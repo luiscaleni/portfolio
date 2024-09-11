@@ -18,8 +18,8 @@ export default function ContHome(){
                         <div className="container_list_app">
                             <AppIcons name="curriculum" classNameApp="appImg" id="Curriculum" text="Curriculum" />
                             <AppIcons name="camera" classNameApp="appImg" id="Camera" text="Camera" />
-                            <AppIcons name="youtube" classNameApp="appImg" id="Youtube" text="Youtube" />
                             <AppIcons name="xcode" classNameApp="appImg" id="Atribution" text="Atributions" />
+                            <AppIcons name="youtube" classNameApp="appImg" id="Youtube" text="Youtube" />
                         </div>
                         <div className="container_list_app">
                             <AppIcons name="home" classNameApp="appImg" id="Home" text="Home" />
