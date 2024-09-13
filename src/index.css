@@ -116,11 +116,11 @@ main{
 #titanium{
   position: absolute;/*relative;*/
   width: 25em;
-  height: 50em;
+  height:auto;
   max-width:25em;
-  max-height:50em;
+  
   border-radius: 3.5em;
-  border: 0.2em solid #DBA583;/*#c5bfb9;*/
+  border: 0.3em solid #DBA583;/*#c5bfb9;*/
   overflow: hidden;
 
   display: flex;

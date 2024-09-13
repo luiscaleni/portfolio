@@ -1,5 +1,6 @@
 #contNav{
     position: absolute;
+    z-index: 55;
     top: 0;
     width: 100%;
     height: 4em;
@@ -9,18 +10,15 @@
     align-items: center;
 }
 #nav{
-    position: absolute;
-    z-index: 55;
-    top: 0;
-    margin-top: 0.4em;
     width: 100%;
     height: 100%;
+    padding-top: 0.7em;
     color: white;
     transition: all ease-in-out 100ms;
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .black_blur{
     background-color: rgba(250, 250, 250, 0.5);
@@ -29,7 +27,7 @@
 }
 #hour{
     width: auto;
-    height: 1em;
+    height: 2em;
     font-size: 0.8em;
     margin-left: 2.5em;
     font-weight: bold;
@@ -40,7 +38,8 @@
     justify-content: center;
 }
 #info{
-    height: 1em;
+    width: auto;
+    height: 2em;
     margin-right: 2.5em;
 
     display: flex;

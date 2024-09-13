@@ -4,7 +4,6 @@ import fullScreen from "./fullScreen"
 
 window.addEventListener("load",()=>{
     setTimeout(() => {
-        //document.getElementById("alwaysOnDisplay").style.display="none"
         let lockScreen = document.getElementById("lockScreen")
         let addContIos = document.getElementById("addContIos")    
                
@@ -48,7 +47,7 @@ window.addEventListener("load",()=>{
 
                         if(document.getElementById("nav").getAttribute("class") === "" && document.getElementById("contFSReplace")){
                             setTimeout(() => {
-                                document.getElementById("nav").classList.add("black_blur")
+                                document.getElementById("ContNav").classList.add("black_blur")
                                 console.log("d")
                             }, 500)
                         }
@@ -67,8 +66,8 @@ window.addEventListener("load",()=>{
                         lockScreen.classList.remove("unlockScreen")
                         lockScreen.style.display="flex"
 
-                        if(document.getElementById("nav").getAttribute("class") === "black_blur"){
-                            document.getElementById("nav").classList.remove("black_blur")
+                        if(document.getElementById("contNav").getAttribute("class") === "black_blur"){
+                            document.getElementById("contNav").classList.remove("black_blur")
                         }
                         setTimeout(() => {
                             document.getElementById("hour").textContent=""

@@ -16,9 +16,9 @@ window.addEventListener("load", ()=>{
                     }else if (contFSReplace){
                         buttonHome.style.display="flex"
                         if(!imgCV){
-                            buttonHome.style.backgroundColor="rgba(255, 255, 255, 0.5)"
+                            buttonHome.style.backgroundColor="rgba(255, 255, 255, 0.3)"
                         }else{
-                            buttonHome.style.backgroundColor="rgba(0, 0, 0, 0.5)"
+                            buttonHome.style.backgroundColor="rgba(0, 0, 0, 0.3)"
                         }
                     }else{
                         buttonHome.style.display="none"
@@ -29,8 +29,8 @@ window.addEventListener("load", ()=>{
             buttonHome.addEventListener("click", ()=> {
                 if (contFSReplace && document.getElementById("lockScreen").getAttribute("class") === "unlockScreen") {
                     buttonHome.style.display="none"
-                    if(document.getElementById("nav").getAttribute("class") === "black_blur"){
-                        document.getElementById("nav").classList.remove("black_blur")
+                    if(document.getElementById("contNav").getAttribute("class") === "black_blur"){
+                        document.getElementById("contNav").classList.remove("black_blur")
                     }
 
                     if (document.getElementById("video")) {

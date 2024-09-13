@@ -6,6 +6,7 @@
     color: white;
     overflow: hidden;
     background: black;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +48,7 @@
 }
 #adaptP{
     padding: 1em;
+    font-size: 1.8vh;
 }
 
 #copyright {

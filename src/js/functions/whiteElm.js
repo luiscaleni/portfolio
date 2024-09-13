@@ -8,5 +8,5 @@ export default function whiteElm(){
     document.getElementById("hour").style.textShadow="0 0 0.2em black"
     document.getElementById("hour").style.fontWeight="bolder"
 
-    document.getElementById("buttonHome").style.backgroundColor="rgba(255, 255, 255, 0.5)"
+    document.getElementById("buttonHome").style.backgroundColor="rgba(255, 255, 255, 0.3)"
 }

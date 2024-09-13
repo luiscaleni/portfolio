@@ -2,14 +2,11 @@
 #iphoneScreen{
     position: relative;
     width: 25em;
-    height: 50em;
+    height: 51em;
     overflow: hidden;
 
     border-radius: 3.5em;
-    border-top: 0.7em solid black;/*#263036;*/
-    border-right: 0.5em solid black;
-    border-bottom: 0.7em solid black;
-    border-left: 0.5em solid black;
+    border: 0.5em solid black;
     
     box-shadow: inset 0em 0em 1em #000;
 

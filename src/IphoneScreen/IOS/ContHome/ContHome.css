@@ -10,7 +10,6 @@
     justify-content: center;
     align-content: flex-start;
     flex-wrap: wrap;
-    
 }
 #navHome {
     width: 100%;
@@ -19,7 +18,6 @@
 .content_windows{
     width: 100%;
     height: 50em;
-    
     
     display: flex;
     justify-content: center;
@@ -37,9 +35,6 @@
 #splide01-track{
     width: 100%;
     height: 100%;
-}
-.splide{
-    
 }
 .splide__slide{
     width: 25em;
@@ -178,7 +173,8 @@
     color: rgb(100 131 155);
 }
 #contFSReplace > img{
-    margin-top: 46.5em;
+    position: absolute;
+    top: 1.5vh;
 }
 
 .hideApp{
