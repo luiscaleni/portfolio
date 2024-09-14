@@ -1,10 +1,14 @@
 .contTotal{
     width: auto;
-    min-width: 25.5%;
+    min-width: 5em;
     min-height: auto;
+    padding: 0.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contToggle{
-    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,14 +23,17 @@
     align-items: center;
     flex-direction: column;
 }
+.content_app_widget > img{
+    display: flex;
+}
 .appImg{
-    width: 3.6em;
-    height: 3.6em;
+    width: 3.5em;
+    height: auto;
 }
 .widget{
-    width: 9em;
-    height: auto;
-
+    width: 8.5em;
+    height:auto;
+    margin: 0.5em;
 }
 
 
@@ -35,7 +42,6 @@
     animation-duration: 700ms;
 }
 #Curriculum{
-    padding: 0.3em;
     border-radius: 20%;
     background-color: white;
 }

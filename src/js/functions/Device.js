@@ -1,4 +1,4 @@
-export default function Device(){
+function Device(){
     setTimeout(() => {
         let root = document.getElementById("root")
         let main = document.getElementById("main")
@@ -22,3 +22,5 @@ export default function Device(){
         }
     }, 0)
 }
+
+export default Device()
