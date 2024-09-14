@@ -15,13 +15,13 @@ export default function ScreenLoader(){
         <>
             <div id="screenLoader">
                 <div id="contLoader">
-                    <img src="./appleLogo.png"/>
+                    <img src="/appleLogo.png"/>
                     <div id="contLoad">
                         <div id="load"></div>
                     </div>
                 </div>
                 <div id="copyright">
-                    <p id="author">por Luis Caleni Velasquez</p>
+                    <p id="author">Portfolio: Luis Caleni Velasquez</p>
                 </div>
             </div>
         </>

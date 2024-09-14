@@ -1,6 +1,6 @@
-import fullScreen from "./fullScreen"
+import FullScreen from "./FullScreen"
 
-export default function alwaysOnDisplay(){
+export default function AlwaysOnDisplay(){
     let addContIos = document.getElementById("addContIos")
     let alwaysOnDisplay = document.getElementById("alwaysOnDisplay")
     let inIos = false
@@ -48,7 +48,7 @@ export default function alwaysOnDisplay(){
             let alert = document.getElementById("alert")
             document.getElementById("ok").addEventListener("click",()=>{
                 if (addContIos.offsetWidth > addContIos.offsetHeight) {
-                    fullScreen(document.documentElement)
+                    FullScreen(document.documentElement)
                     document.getElementById("root").style.height="100vh"
                 }
                 alert.remove()

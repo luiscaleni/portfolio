@@ -1,9 +1,9 @@
-import "./functions/devices"
-import "./functions/locked"
+import "./functions/Device"
+import "./functions/Locked"
 
-import "./functions/clock"
-import "./functions/buttonHome"
-import "./functions/app"
-import "./functions/finder"
+import "./functions/Clock"
+import "./functions/ButtonHome"
+import "./functions/Finder"
+import "./functions/App"
 
-import "./openApp/openApp"
+import "./appsName/OpenApp"

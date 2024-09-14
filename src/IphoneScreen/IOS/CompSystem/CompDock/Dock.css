@@ -10,17 +10,20 @@
     align-items: center;
 }
 .dock{
-    width: 22em;
+    width: 85%;
     height: auto;
-    max-width: 35em;
+    max-width: 22em;
     margin-bottom: 0.6em;
-    padding: 0.2em 0.5em 0.1em 0.5em;
+    padding: 0.3em;
+    
+    /*padding: 0.2em 0.5em 0.1em 0.5em;*/
+    
     border-radius: 1.5em;
     backdrop-filter: blur(0.5em);
     background-color: var(--bg-color-a);
     
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }

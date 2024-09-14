@@ -1,6 +1,6 @@
-import alwaysOnDisplay from "./alwaysOnDisplay"
-import iconHomeEffect from "./iconHomeEffect"
-import fullScreen from "./fullScreen"
+import AlwaysOnDisplay from "./AlwaysOnDisplay"
+import IconHomeEffect from "./IconHomeEffect"
+import FullScreen from "./FullScreen"
 
 window.addEventListener("load",()=>{
     setTimeout(() => {
@@ -18,7 +18,7 @@ window.addEventListener("load",()=>{
                 lockScreen.classList.remove("lockScreen")
                 navigator.wakeLock.request('screen')
                 if(addContIos){
-                    fullScreen(document.documentElement)
+                    FullScreen(document.documentElement)
                     setTimeout(() => {
                         inIos = true
                     }, 1000)
@@ -30,7 +30,7 @@ window.addEventListener("load",()=>{
                 }, 500)
                 
                 setTimeout(() => {
-                    iconHomeEffect("showIcons")
+                    IconHomeEffect("showIcons")
                 }, 200)
             })
 
@@ -39,7 +39,7 @@ window.addEventListener("load",()=>{
                     if(lockScreen.getAttribute("class") === "lockScreen"){/* Si se presionó el button_lock con el dispositivo bloqueado */
 
                         setTimeout(() => {
-                            iconHomeEffect("showIcons")
+                            IconHomeEffect("showIcons")
                         }, 200)
 
                         lockScreen.classList.add("unlockScreen")
@@ -59,7 +59,7 @@ window.addEventListener("load",()=>{
 
                     }else if (lockScreen.getAttribute("class") === "unlockScreen") {/* Si se presionó el button_lock con el dispositivo desbloqueado */
                         setTimeout(() => {
-                            iconHomeEffect("hideIcons")
+                            IconHomeEffect("hideIcons")
                         }, 500)
                         
                         lockScreen.classList.add("lockScreen")
@@ -79,6 +79,6 @@ window.addEventListener("load",()=>{
                 })
             }
         }
-        alwaysOnDisplay()
+        AlwaysOnDisplay()
     }, 0)
 })

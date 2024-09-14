@@ -1,4 +1,4 @@
-export default function blackElm(){  
+export default function BlackElm(){  
     document.getElementById("hour").style.color="black"
     document.getElementById("hour").style.textShadow="none"
     

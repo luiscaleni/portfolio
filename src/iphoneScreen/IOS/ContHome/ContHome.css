@@ -13,7 +13,7 @@
 }
 #navHome {
     width: 100%;
-    height: 4.5em;
+    height: 3.5em;
 }
 .content_windows{
     width: 100%;
@@ -43,16 +43,17 @@
     max-height: 50em;
 
     display: flex;
-    justify-content: flex-start;
-    align-content: center;
+    justify-content: center;
+    align-content: flex-start;
     flex-wrap: wrap;
-    flex-direction: column;
+    /*
+    flex-direction: column;*/
 }
 .splide__arrow--prev, .splide__arrow--next {
     display: none;
 }
 .splide__pagination{
-    bottom: 12em;
+    bottom: 11rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +71,7 @@
 }
 .container_list_app{
     max-width: 100vw;
-    min-width: 20em;
+    width: 20em;
     height: auto;
 
     display: flex;

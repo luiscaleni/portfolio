@@ -3,7 +3,6 @@ import './LockScreen.css'
 import Notif from "../CompNotif"
 import AlwaysOnDisplay from "../CompAlwaysOnDisplay"
 
-
 export default function LockScreen(){
     return (
         <>
@@ -11,11 +10,11 @@ export default function LockScreen(){
             <div id="lockScreen">
                 <div id="contElemLockScreen">
                     <div id="groupScreen">
-                        <div id="groupScreenTop">
-                            <div id="dateScreen"></div>
-                            <div id="hourScreen"></div>
-                        </div>
                         <div id="lockScreenMemoji">
+                            <div id="groupScreenTop">
+                                <div id="dateScreen"></div>
+                                <div id="hourScreen"></div>
+                            </div>
                             <img src="/assets/memoji.png" id="memoji"/>
                         </div>
 

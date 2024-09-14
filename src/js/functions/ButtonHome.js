@@ -1,4 +1,5 @@
-import whiteElm from "./whiteElm"
+import WhiteElm from "./WhiteElm"
+
 window.addEventListener("load", ()=>{
     setTimeout(() => {
         let buttonHome = document.getElementById("buttonHome")
@@ -42,7 +43,7 @@ window.addEventListener("load", ()=>{
                             document.getElementById("contFSReplace").remove(videoDom)
                         }, 500)
                     }else {
-                        whiteElm()
+                        WhiteElm()
                     }
 
                     contFSReplace.classList.add("hideApp")

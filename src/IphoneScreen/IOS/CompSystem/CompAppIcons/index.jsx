@@ -11,7 +11,7 @@ return (
         <div className="contTotal">
             <div className="contToggle">
                 <div className="content_app_widget">
-                    <img src={"assets/icons/"+ name + ".svg"} className={addClassApp} id={id} />
+                    <img src={"/assets/icons/"+ name + ".svg"} className={addClassApp} id={id} />
                     <span className="textApp">{text}</span>
                 </div>
             </div>

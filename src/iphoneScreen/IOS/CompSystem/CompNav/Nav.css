@@ -3,7 +3,7 @@
     z-index: 55;
     top: 0;
     width: 100%;
-    height: 4em;
+    height: 3.5em;
     
     display: flex;
     justify-content: center;
@@ -12,7 +12,7 @@
 #nav{
     width: 100%;
     height: 100%;
-    padding-top: 0.7em;
+    padding-top: 0.6em;
     color: white;
     transition: all ease-in-out 100ms;
 
@@ -26,24 +26,24 @@
     border-radius: 3.8em 3.8em 0em 0em;
 }
 #hour{
-    width: auto;
-    height: 2em;
+    width: 4.9rem;
+    height: 2.3rem;
     font-size: 0.8em;
-    margin-left: 2.5em;
+    margin-left: 3.5em;
     font-weight: bold;
     text-shadow: 0 0 0.2em black;
 
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
 }
 #info{
     width: auto;
-    height: 2em;
+    height: 2.3em;
     margin-right: 2.5em;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items:center;
     flex-direction: column;
 }
