@@ -35,7 +35,7 @@
   width: 100vw;
   height: 93.5vh;
   overflow: hidden;
-  background-image: url("assets/fondo.jpg");
+  background-image: url("/assets/fondo.jpg");
   background-size:cover;
   background-position-x: 0;
   background-position-y: 50%;
