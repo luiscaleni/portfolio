@@ -48,7 +48,6 @@ window.addEventListener("load",()=>{
                         if(document.getElementById("nav").getAttribute("class") === "" && document.getElementById("contFSReplace")){
                             setTimeout(() => {
                                 document.getElementById("ContNav").classList.add("black_blur")
-                                console.log("d")
                             }, 500)
                         }
                         
