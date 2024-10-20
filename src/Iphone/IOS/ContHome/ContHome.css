@@ -69,16 +69,7 @@
     width: 0.7em;
     height: 0.7em;
 }
-.container_list_app{
-    max-width: 100vw;
-    width: 20rem;
-    height: auto;
 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-}
 #finder{
     width: auto;
     height: 2.5em;
