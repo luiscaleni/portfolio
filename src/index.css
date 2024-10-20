@@ -22,7 +22,11 @@
   --min-width: 24.375em;
   --min-height: 52.75em;
   --bg-color: black;
-  --titanium:#18181A;
+  --t1:#292929;
+
+  /*Button*/
+  --bgBtn:#1b1b1b;
+  --borderBtn: #363636;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -38,7 +42,7 @@
   background-image: url("/assets/fondo.jpg");
   background-size:cover;
   background-position-x: 0;
-  background-position-y: 50%;
+  background-position-y: 0;
   background-repeat: no-repeat;
 
   display: flex;
@@ -59,39 +63,39 @@ body {
 
 #button_action{
   position: absolute;
-  z-index: 2;
-  width: 0.25em;
+  z-index: 3;
+  width: 0.3em;
   height: 3em;
   content: '';
   top: -16em;
-  left: -13em;
+  right:12.65em;
   border-radius: 1em 0 0 1em;
-  border: 0.1em solid #363636;
-  background-color: #2c2c2c;
+  border: 0.1em solid var(--borderBtn);
+  background-color: var(--bgBtn);
 }
 #button_v_up{
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   width: 0.3em;
   height: 6em;
   content: '';
   top: -12em;
-  left: -13em;
+  right:12.65em;
   border-radius: 1em 0 0 1em;
-  border: 0.1em solid #363636;
-  background-color: #2c2c2c;
+  border: 0.1em solid var(--borderBtn);
+  background-color: var(--bgBtn);
 }
 #button_v_down{
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   width: 0.3em;
   height: 6em;
   content: '';
   top: -5em;
-  left: -13em;
+  right:12.65em;
   border-radius: 1em 0 0 1em;
-  border: 0.1em solid #363636;
-  background-color: #2c2c2c;
+  border: 0.1em solid var(--borderBtn);
+  background-color: var(--bgBtn);
 }
 #button_lock{
   position: absolute;
@@ -101,19 +105,17 @@ body {
   height: 6em;
   content: '';
   top: -15em;
-  right: -13em;
+  left: 12.65em;
   border-radius: 0 1em 1em 0;
-  border: 0.1em solid #363636;
-  background-color: #2c2c2c;
+  border: 0.1em solid var(--borderBtn);
+  background-color: var(--bgBtn);
 }
-#t1{
+#t3{
   position: absolute;
   z-index: 2;
-  padding: 0;
-  border: 0.1em solid #212121;
-  border-radius: 4.3em;
-  overflow: hidden;
-  box-shadow: 0 0.5em 1em #000000d7;
+  border: 0.1em solid var(--t1);
+  border-radius: 4.4em;
+  box-shadow: 0.2em 0.6em 0.4em #ABAFB0;
 
   display: flex;
   justify-content: center;
@@ -121,31 +123,19 @@ body {
 }
 #t2{
   border: 0.2em solid #656566;
-  padding: 0;
-  border-radius: 4.3em;
+  border-radius: 4.2em;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
 }
-#t3{
-  border: 0.1em solid #212121;
-  border-radius: 4em;
-  padding: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-#titanium{
+#t1{
   width: 25em;
   height:auto;
   max-width:25em;
-  
-  border-radius: var(--border-radius);
-  border: 0.1em solid var(--titanium);/*#DBA583;/*#c5bfb9;*/
+  border-radius: 4em;
+  border: 0.1em solid var(--t1);
   overflow: hidden;
 
   display: flex;

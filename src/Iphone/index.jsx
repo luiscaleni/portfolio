@@ -1,10 +1,10 @@
 import React from "react"
-import "./IphoneScreen.css"
+import "./Iphone.css"
 
 import DynamicIsland from "./IOS/CompSystem/CompDynamicIsland"
 import IOS from "./IOS"
 
-export default function IphoneScreen(){
+export default function Iphone(){
     return (
         <>
         <main id="main">
@@ -12,14 +12,12 @@ export default function IphoneScreen(){
             <span id="button_v_up" className="levelAudio"></span>
             <span id="button_v_down" className="levelAudio"></span>
             
-            <div id="t1">
+            <div id="t3">
                 <div id="t2">
-                    <div id="t3">
-                        <div id="titanium">
-                            <div id="iphoneScreen">
-                                <DynamicIsland />
-                                <IOS />
-                            </div>
+                    <div id="t1">
+                        <div id="iphoneScreen">
+                            <DynamicIsland />
+                            <IOS />
                         </div>
                     </div>
                 </div>

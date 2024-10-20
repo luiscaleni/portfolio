@@ -1,17 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import IphoneScreen from './IphoneScreen'
+import Iphone from './Iphone'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const routes = [
   {
     path: "/",
-    element: <IphoneScreen />
+    element: <Iphone />
   },
   {
     path: "*",
-    element: <IphoneScreen />
+    element: <Iphone />
   }
 ]
 const router = createBrowserRouter(routes)
