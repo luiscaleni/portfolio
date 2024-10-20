@@ -43,7 +43,7 @@ window.addEventListener("load", ()=>{
                         activeCamera.style.background="linear-gradient(70deg,#271c44, #6b21cc)"
                         setTimeout(() => {
                             document.getElementById("contFSReplace").remove(videoDom)
-                        }, 500)
+                        }, 400)
                     }else {
                         WhiteElm()
                     }
@@ -54,7 +54,7 @@ window.addEventListener("load", ()=>{
                     setTimeout(() => {
                         contFSReplace.classList.remove("hideApp")
                         contFSReplace.remove()
-                    }, 500)
+                    }, 400)
 
                 }else if (!contFSReplace || (contFSReplace && document.getElementById("lockScreen").getAttribute("class") === "lockScreen")){
                     document.getElementById("unlockBySliding").classList.add("up")
