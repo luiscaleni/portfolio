@@ -36,9 +36,11 @@ window.addEventListener("load", ()=>{
 
                     if (document.getElementById("video")) {
                         const videoDom = document.getElementById("video")
+                        const activeCamera = document.getElementById("cameraDI")
+                        
                         videoDom.srcObject.getTracks()[0].stop()
                         videoDom.classList.add("hideAppCamera")
-
+                        activeCamera.style.background="linear-gradient(70deg,#271c44, #6b21cc)"
                         setTimeout(() => {
                             document.getElementById("contFSReplace").remove(videoDom)
                         }, 500)

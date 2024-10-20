@@ -11,19 +11,19 @@
     justify-content: space-between;
     align-items: center;
 }
-#camera{
+#sensorDI{
     width: 0.5em; 
     height: 0.5em;
     margin: auto 0 auto 1em;
     border-radius: 100%;
-    box-shadow:0 0 0.6em #541a63;
-    background: linear-gradient(70deg,#1d0218, #3f1249);
+    box-shadow:0 0 0.6em #86b6ff;    
+    background:linear-gradient(100deg,#142338, #1861ff);
 }
-#sensor{
+#cameraDI{
     width: 0.5em; 
     height: 0.5em;
     margin: auto 1em auto 0;
     border-radius: 100%;
-    box-shadow:0 0 0.6em #0149b4;    
-    background:linear-gradient(100deg,#011f46, #0149b4);
+    box-shadow:0 0 0.6em #ac68fa;
+    background: linear-gradient(70deg,#271c44, #6b21cc);
 }
