@@ -12,5 +12,5 @@ const appsData = [
         name: "Atribution"
     }
 ]
- 
+
 export default appsData
