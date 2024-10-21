@@ -1,4 +1,4 @@
-export default function FullScreen(element) {
+export default function fullScreen(element) {
     if (element.requestFullScreen) {
         element.requestFullScreen()
     } else if (element.mozRequestFullScreen) {

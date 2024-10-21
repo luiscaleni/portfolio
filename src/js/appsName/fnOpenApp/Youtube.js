@@ -1,4 +1,4 @@
-export default function Youtube(){
+export default function youtube(){
     let contFSReplace = document.getElementById("contFSReplace")
     let contFSReplaceChild = contFSReplace.firstChild
     let id = contFSReplaceChild.firstChild.id

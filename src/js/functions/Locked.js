@@ -1,12 +1,12 @@
-import AlwaysOnDisplay from "./AlwaysOnDisplay"
-import IconHomeEffect from "./IconHomeEffect"
-import FullScreen from "./FullScreen"
+import alwaysOnDisplay from "./alwaysOnDisplay"
+import iconHomeEffect from "./iconHomeEffect"
+import fullScreen from "./fullScreen"
 
 window.addEventListener("load",()=>{
     setTimeout(() => {
         let lockScreen = document.getElementById("lockScreen")
-        let addContIos = document.getElementById("addContIos")    
-               
+        let addContIos = document.getElementById("addContIos")
+             
         if(lockScreen){
             lockScreen.classList.add("lockScreen")   
             document.getElementById("hour").textContent=""
@@ -18,7 +18,7 @@ window.addEventListener("load",()=>{
                 lockScreen.classList.remove("lockScreen")
                 navigator.wakeLock.request('screen')
                 if(addContIos){
-                    FullScreen(document.documentElement)
+                    fullScreen(document.documentElement)
                     setTimeout(() => {
                         inIos = true
                     }, 1000)
@@ -29,18 +29,14 @@ window.addEventListener("load",()=>{
                     document.getElementById("barBottomInfo").style.backgroundColor="transparent"
                 }, 500)
                 
-                setTimeout(() => {
-                    IconHomeEffect("showIcons")
-                }, 200)
+                iconHomeEffect("showIcons")
             })
 
             if(document.getElementById("button_lock")){
                 document.getElementById("button_lock").addEventListener("click", ()=> { 
                     if(lockScreen.getAttribute("class") === "lockScreen"){/* Si se presionó el button_lock con el dispositivo bloqueado */
 
-                        setTimeout(() => {
-                            IconHomeEffect("showIcons")
-                        }, 200)
+                        iconHomeEffect("showIcons")
 
                         lockScreen.classList.add("unlockScreen")
                         lockScreen.classList.remove("lockScreen")
@@ -57,9 +53,7 @@ window.addEventListener("load",()=>{
                         }, 500)
 
                     }else if (lockScreen.getAttribute("class") === "unlockScreen") {/* Si se presionó el button_lock con el dispositivo desbloqueado */
-                        setTimeout(() => {
-                            IconHomeEffect("hideIcons")
-                        }, 500)
+                        iconHomeEffect("hideIcons")
                         
                         lockScreen.classList.add("lockScreen")
                         lockScreen.classList.remove("unlockScreen")
@@ -78,6 +72,6 @@ window.addEventListener("load",()=>{
                 })
             }
         }
-        AlwaysOnDisplay()
+        alwaysOnDisplay()
     }, 0)
 })

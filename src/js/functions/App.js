@@ -1,8 +1,8 @@
-import OpenApp from "../appsName/OpenApp"
+import openApp from "../appsName/openApp"
+import iconHomePosition from "./iconHomePosition"
 
-function App(){
+function app(){
     window.addEventListener("load", ()=>{
-        let contParentNode
         let contTotal
         let contToggleAndContFS
         let cloneContToggleAndContFS
@@ -15,11 +15,7 @@ function App(){
         }, 5000)
     
         setTimeout(() => {
-            for (let index = 0; index < lista.length; index++) {
-                const element = lista[index]
-                contParentNode = element.parentNode.parentNode.parentNode
-                contParentNode.classList.add("iconHomePosition")
-            }
+            iconHomePosition()
             
             Array.from(lista).forEach(elm => elm.addEventListener("click", (e)=>{
                 contTotal = elm.closest(".contTotal")
@@ -44,11 +40,11 @@ function App(){
                     contToggleAndContFS.classList.add("contToggle")
                     document.getElementById("ios").removeChild(contToggleAndContFS)
                     contTotal.appendChild(contToggleAndContFS)
-                    OpenApp()
+                    openApp()
                 }, 500)
             }))
-        }, 3000)
+        }, 4000)
     })
 }
 
-export default App()
+export default app()

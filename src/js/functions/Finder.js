@@ -1,4 +1,4 @@
-function Finder(){
+function finder(){
     setTimeout(() => {
         let divFinder = document.createElement("div")
         let imgFinder = document.createElement("img")
@@ -52,4 +52,4 @@ function Finder(){
     }, 5000)
 }
 
-export default Finder()
+export default finder()

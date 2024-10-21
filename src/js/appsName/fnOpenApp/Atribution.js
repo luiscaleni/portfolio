@@ -1,4 +1,4 @@
-export default function Atribution(){
+export default function atribution(){
     let contFSReplace = document.getElementById("contFSReplace")
     let contFSReplaceChild = contFSReplace.firstChild
     let id = contFSReplaceChild.firstChild.id

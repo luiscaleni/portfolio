@@ -1,4 +1,4 @@
-export default function Curriculum(){
+export default function curriculum(){
     let imgCV = document.createElement("img")
 
     imgCV.src="/assets/cv.png"
