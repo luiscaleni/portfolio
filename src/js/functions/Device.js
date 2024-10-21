@@ -20,7 +20,7 @@ function device(){
             contIos.id="addContIos"
             contLoader.appendChild(p)
         }
-    }, 0)
+    }, 10)
 }
 
 export default device()
