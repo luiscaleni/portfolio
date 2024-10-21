@@ -5,8 +5,8 @@ import fullScreen from "./fullScreen"
 window.addEventListener("load",()=>{
     setTimeout(() => {
         let lockScreen = document.getElementById("lockScreen")
-        let addContIos = document.getElementById("addContIos")
-             
+        let addContIos = document.getElementById("addContIos")    
+               
         if(lockScreen){
             lockScreen.classList.add("lockScreen")   
             document.getElementById("hour").textContent=""
@@ -29,14 +29,18 @@ window.addEventListener("load",()=>{
                     document.getElementById("barBottomInfo").style.backgroundColor="transparent"
                 }, 500)
                 
-                iconHomeEffect("showIcons")
+                setTimeout(() => {
+                    iconHomeEffect("showIcons")
+                }, 200)
             })
 
             if(document.getElementById("button_lock")){
                 document.getElementById("button_lock").addEventListener("click", ()=> { 
                     if(lockScreen.getAttribute("class") === "lockScreen"){/* Si se presionó el button_lock con el dispositivo bloqueado */
 
-                        iconHomeEffect("showIcons")
+                        setTimeout(() => {
+                            iconHomeEffect("showIcons")
+                        }, 200)
 
                         lockScreen.classList.add("unlockScreen")
                         lockScreen.classList.remove("lockScreen")
@@ -53,7 +57,9 @@ window.addEventListener("load",()=>{
                         }, 500)
 
                     }else if (lockScreen.getAttribute("class") === "unlockScreen") {/* Si se presionó el button_lock con el dispositivo desbloqueado */
-                        iconHomeEffect("hideIcons")
+                        setTimeout(() => {
+                            iconHomeEffect("hideIcons")
+                        }, 500)
                         
                         lockScreen.classList.add("lockScreen")
                         lockScreen.classList.remove("unlockScreen")

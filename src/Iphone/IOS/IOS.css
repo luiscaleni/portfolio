@@ -19,12 +19,12 @@
     align-items: center;
 }
 
-.iconHomePosition_appImg{
+.iconHomePosition-appImg{
     transform: scale(2) translateY(50em);
 }
-.iconHomeEffect_appImg{
+.iconHomeEffect-appImg{
     animation: iconEffectAppImg;
-    animation-duration: 600ms;
+    animation-duration: 700ms;
 }
 @keyframes iconEffectAppImg{
     0%{
@@ -38,12 +38,12 @@
     }
 }
 
-.iconHomePosition_widget{
+.iconHomePosition-widget{
     transform: scale(1.3) translateY(50em);
 }
-.iconHomeEffect_widget{
+.iconHomeEffect-widget{
     animation: iconEffectWidget;
-    animation-duration: 600ms;
+    animation-duration: 700ms;
 }
 @keyframes iconEffectWidget{
     0%{
