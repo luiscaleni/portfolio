@@ -1,4 +1,4 @@
-function clock(){
+function clockFn(){
     function myHour() {
         let currentDate = new Date() //Actualizar myDate.
     
@@ -195,4 +195,4 @@ function clock(){
     setInterval(update,1000) //iniciar temporizador
 }
 
-export default clock()
+export default clockFn()
