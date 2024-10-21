@@ -1,4 +1,4 @@
-import appsData from "./fnOpenApp/appsData"
+import appData from "./fnOpenApp/appData"
 import curriculum from "./fnOpenApp/curriculum"
 import camera from "./fnOpenApp/camera"
 import youtube from "./fnOpenApp/youtube"
@@ -7,14 +7,14 @@ import memoji from "./fnOpenApp/memoji"
 
 import blackElm from "../functions/blackElm"
 
-export default function openApp(){
+export default function openApps(){
     if (document.getElementById("contFSReplace") !== null) {
         let element = document.getElementById("contFSReplace")
         let elementChild = element.firstChild
         let elementChildId = elementChild.firstChild.id
 
-        for (let index = 0; index < appsData.length; index++) {
-            const e = appsData[index];
+        for (let index = 0; index < appData.length; index++) {
+            const e = appData[index];
             if (elementChildId === e.name) {
                 switch (elementChildId) {
                     case "Curriculum":

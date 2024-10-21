@@ -1,6 +1,6 @@
-import openApp from "../appsName/openApp"
+import openApps from "../appsName/openApps"
 
-function app(){
+function apps(){
     window.addEventListener("load", ()=>{
         let contParentNode
         let contTotal
@@ -44,11 +44,11 @@ function app(){
                     contToggleAndContFS.classList.add("contToggle")
                     document.getElementById("ios").removeChild(contToggleAndContFS)
                     contTotal.appendChild(contToggleAndContFS)
-                    OpenApp()
+                    openApps()
                 }, 500)
             }))
         }, 3000)
     })
 }
 
-export default app()
+export default apps()
