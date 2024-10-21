@@ -1,4 +1,4 @@
-export default function curriculum(){
+const curriculum = ()=>{
     let imgCV = document.createElement("img")
 
     imgCV.src="/assets/cv.png"
@@ -8,3 +8,4 @@ export default function curriculum(){
 
     document.getElementById("contFSReplace").appendChild(imgCV)
 }
+export default curriculum
