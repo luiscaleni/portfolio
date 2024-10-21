@@ -5,7 +5,7 @@ import youtube from "./fnOpenApp/youtube"
 import atribution from "./fnOpenApp/atribution"
 import memoji from "./fnOpenApp/memoji"
 
-import blackElm from "../functions/blackElm"
+import fnBlackElm from "../functions/fnBlackElm"
 
 export default function openApps(){
     if (document.getElementById("contFSReplace") !== null) {
@@ -19,7 +19,7 @@ export default function openApps(){
                 switch (elementChildId) {
                     case "Curriculum":
                         curriculum()
-                        blackElm()
+                        fnBlackElm()
                         break;
                     case "Camera":
                         camera()
