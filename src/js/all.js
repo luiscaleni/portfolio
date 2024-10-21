@@ -1,4 +1,4 @@
-import "./functions/device"
+import "./functions/devices"
 import "./functions/locked"
 
 import "./functions/clock"
