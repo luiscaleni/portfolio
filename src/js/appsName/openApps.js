@@ -1,9 +1,9 @@
-import appData from "./fnOpenApp/appData"
-import curriculum from "./fnOpenApp/curriculum"
-import camera from "./fnOpenApp/camera"
-import youtube from "./fnOpenApp/youtube"
-import atribution from "./fnOpenApp/atribution"
-import memoji from "./fnOpenApp/memoji"
+import appData from "./fnOpenApp/appsData"
+import appCurriculum from "./fnOpenApp/appCurriculum"
+import appCamera from "./fnOpenApp/appCamera"
+import appYoutube from "./fnOpenApp/appYoutube"
+import appAtribution from "./fnOpenApp/appAtribution"
+import appCameraMemoji from "./fnOpenApp/appCameraMemoji"
 
 import fnBlackElm from "../functions/fnBlackElm"
 
@@ -18,18 +18,18 @@ export default function openApps(){
             if (elementChildId === e.name) {
                 switch (elementChildId) {
                     case "Curriculum":
-                        curriculum()
+                        appCurriculum()
                         fnBlackElm()
                         break;
                     case "Camera":
-                        camera()
-                        memoji()
+                        appCamera()
+                        appCameraMemoji()
                         break;
                     case "Youtube":
-                        youtube()
+                        appYoutube()
                         break;
                     case "Atribution":
-                        atribution()
+                        appAtribution()
                         break;
                     default:
                         break;

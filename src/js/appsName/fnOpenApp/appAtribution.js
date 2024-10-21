@@ -1,11 +1,12 @@
-export default function youtube(){
+export default function appAtribution(){
     let contFSReplace = document.getElementById("contFSReplace")
     let contFSReplaceChild = contFSReplace.firstChild
     let id = contFSReplaceChild.firstChild.id
 
-    if(id === "Youtube"){
+    if(id === "Atribution"){
         let iframe = document.createElement("iframe")
-        iframe.src='https://www.youtube.com/embed/EFPl18V0xPU?si=CWu1Ub7JnXE9OK3j&amp;controls=0'
+        iframe.id="xcode"
+        iframe.src='../src/pages/atribution.html'
 
         contFSReplace.appendChild(iframe)
     }

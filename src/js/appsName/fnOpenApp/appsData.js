@@ -1,4 +1,4 @@
-const appData = [
+const appsData = [
     {
         name: "Curriculum"
     },
@@ -13,4 +13,4 @@ const appData = [
     }
 ]
 
-export default appData
+export default appsData

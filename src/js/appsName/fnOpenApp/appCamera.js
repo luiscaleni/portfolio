@@ -1,4 +1,4 @@
-export default function camera(){
+export default function appCamera(){
     const videoDom = document.createElement("video")
     const contFSReplace = document.getElementById("contFSReplace")
     const activeCamera = document.getElementById("cameraDI")

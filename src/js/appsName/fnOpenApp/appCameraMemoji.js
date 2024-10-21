@@ -6,7 +6,7 @@ import { FilesetResolver, FaceLandmarker } from "https://cdn.jsdelivr.net/npm/@m
  * Returns the world-space dimensions of the viewport at `depth` units away from
  * the camera.
  */
-export default function memoji(){
+export default function appCameraMemoji(){
     let widthVideo = 400;
     let heightVideo = 800;
 
