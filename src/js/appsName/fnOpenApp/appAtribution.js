@@ -6,7 +6,7 @@ export default function appAtribution(){
     if(id === "Atribution"){
         let iframe = document.createElement("iframe")
         iframe.id="xcode"
-        iframe.src='../src/pages/atribution.html'
+        iframe.src='/pages/atribution.html'
 
         contFSReplace.appendChild(iframe)
     }
