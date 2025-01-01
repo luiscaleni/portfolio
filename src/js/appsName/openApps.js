@@ -4,6 +4,7 @@ import appCamera from "./fnOpenApp/appCamera"
 import appYoutube from "./fnOpenApp/appYoutube"
 import appAtribution from "./fnOpenApp/appAtribution"
 import appCameraMemoji from "./fnOpenApp/appCameraMemoji"
+import appPhotos from "./fnOpenApp/appPhotos"
 
 import fnBlackElm from "../functions/fnBlackElm"
 
@@ -14,8 +15,9 @@ export default function openApps(){
         let elementChildId = elementChild.firstChild.id
 
         for (let index = 0; index < appData.length; index++) {
-            const e = appData[index];
-            if (elementChildId === e.name) {
+            const e = appData[index]
+
+            if (elementChildId === e) {
                 switch (elementChildId) {
                     case "Curriculum":
                         appCurriculum()
@@ -30,6 +32,9 @@ export default function openApps(){
                         break;
                     case "Atribution":
                         appAtribution()
+                        break;
+                    case "Photos":
+                        appPhotos()
                         break;
                     default:
                         break;

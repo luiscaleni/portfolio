@@ -18,7 +18,7 @@ export default function ContHome(){
                                 <AppIcons name="camera" classNameApp="appImg" id="Camera" text="Camera" contTotalValue="home"/>
                                 <AppIcons name="xcode" classNameApp="appImg" id="Atribution" text="Atributions" contTotalValue="home"/>
                                 <AppIcons name="youtube" classNameApp="appImg" id="Youtube" text="Youtube" contTotalValue="home"/>
-                                <AppIcons name="wallet" classNameApp="appImg" id="wallet" text="Wallet" contTotalValue="home"/>
+                                <AppIcons name="photos" classNameApp="appImg" id="Photos" text="Photos" contTotalValue="home"/>
                                 <AppIcons name="find-my" classNameApp="appImg" id="findMy" text="Find my" contTotalValue="home"/>
                             </>
                         } />
@@ -34,7 +34,7 @@ export default function ContHome(){
                         } />
                         <CompContainerListApp elements={
                             <>
-                                <AppIcons name="voice-memos" classNameApp="appImg" id="voiceMemos" text="Voice Memos" contTotalValue="home"/>
+                                <AppIcons name="wallet" classNameApp="appImg" id="wallet" text="Wallet" contTotalValue="home"/>
                             </>
                         } />
                     </SplideSlide>
@@ -46,7 +46,7 @@ export default function ContHome(){
                                 <AppIcons name="reminders" classNameApp="appImg" id="reminders" text="Reminders" contTotalValue="home"/>
                                 <AppIcons name="settings" classNameApp="appImg" id="settings" text="Settings" contTotalValue="home"/>
                                 <AppIcons name="health" classNameApp="appImg" id="health" text="Health" contTotalValue="home"/>
-                                <AppIcons name="photos" classNameApp="appImg" id="Photos" text="Photos" contTotalValue="home"/>
+                                <AppIcons name="voice-memos" classNameApp="appImg" id="voiceMemos" text="Voice Memos" contTotalValue="home"/>
                             </>
                         } />
                     </SplideSlide>

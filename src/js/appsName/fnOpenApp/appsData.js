@@ -1,16 +1,9 @@
 const appsData = [
-    {
-        name: "Curriculum"
-    },
-    {
-        name: "Camera"
-    },
-    {
-        name: "Youtube"
-    },
-    {
-        name: "Atribution"
-    }
+    "Curriculum",
+   "Camera",
+    "Youtube",
+    "Atribution",
+    "Photos"
 ]
 
 export default appsData
