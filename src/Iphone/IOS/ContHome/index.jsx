@@ -19,13 +19,13 @@ export default function ContHome(){
                                 <AppIcons name="xcode" classNameApp="appImg" id="Atribution" text="Atributions" contTotalValue="home"/>
                                 <AppIcons name="youtube" classNameApp="appImg" id="Youtube" text="Youtube" contTotalValue="home"/>
                                 <AppIcons name="photos" classNameApp="appImg" id="Photos" text="Photos" contTotalValue="home"/>
-                                <AppIcons name="find-my" classNameApp="appImg" id="findMy" text="Find my" contTotalValue="home"/>
+                                <AppIcons name="calendar" classNameApp="appImg" id="Calendar" text="Calendar" contTotalValue="home"/>
                             </>
                         } />
                         <CompContainerListApp elements={
                             <>
                                 <AppIcons name="home" classNameApp="appImg" id="Home" text="Home" contTotalValue="home"/>
-                                <AppIcons name="calendar" classNameApp="appImg" id="Calendar" text="Calendar" contTotalValue="home"/>
+                                <AppIcons name="find-my" classNameApp="appImg" id="findMy" text="Find my" contTotalValue="home"/>
                                 <AppIcons name="facetime" classNameApp="appImg" id="FaceTime" text="FaceTime" contTotalValue="home"/>
                                 <AppIcons name="app-store" classNameApp="appImg" id="AppStore" text="App Store" contTotalValue="home"/>
                                 <AppIcons name="news" classNameApp="appImg" id="news" text="News" contTotalValue="home"/>
