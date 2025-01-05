@@ -6,4 +6,5 @@ import "./functions/fnButtonHome"
 import "./functions/fnFinder"
 import "./functions/fnApps"
 
-import "./appsName/openApps"
+import "./functions/fnOpenApps"
+import "./functions/fnEventListener"

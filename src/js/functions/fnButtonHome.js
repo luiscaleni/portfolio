@@ -5,22 +5,15 @@ window.addEventListener("load", ()=>{
         let buttonHome = document.getElementById("buttonHome")
         if (buttonHome) {
             let contFSReplace
-            let imgCV
             buttonHome.style.display="none"
 
             setInterval(() => {
                 contFSReplace = document.getElementById("contFSReplace")
-                imgCV = document.getElementById("imgCV")
                 if(document.getElementById("lockScreen")){
                     if(document.getElementById("lockScreen").getAttribute("class") === "lockScreen"){
                         buttonHome.style.display="flex"
                     }else if (contFSReplace){
                         buttonHome.style.display="flex"
-                        if(!imgCV){
-                            buttonHome.style.backgroundColor="rgba(255, 255, 255, 0.3)"
-                        }else{
-                            buttonHome.style.backgroundColor="rgba(0, 0, 0, 0.3)"
-                        }
                     }else{
                         buttonHome.style.display="none"
                     }

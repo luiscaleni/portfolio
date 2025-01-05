@@ -135,7 +135,6 @@ body {
   max-width: var(--width);
   border-radius: 2em;
   border: 0.1em solid var(--t1);
-  overflow: hidden;
 
   display: flex;
   justify-content: center;

@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.20",
     "@splidejs/react-splide": "^0.7.12",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",

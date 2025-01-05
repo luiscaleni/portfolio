@@ -1,4 +1,4 @@
-import openApps from "../appsName/openApps"
+import fnOpenApps from "./fnOpenApps"
 import fnIconHomePosition from "./fnIconHomePosition"
 
 function fnApps(){
@@ -43,7 +43,7 @@ function fnApps(){
                         contToggleAndContFS.classList.add("contToggle")
                         document.getElementById("ios").removeChild(contToggleAndContFS)
                         contTotal.appendChild(contToggleAndContFS)
-                        openApps()
+                        fnOpenApps()
                     }, 500)
                 }))
             }, 4000)

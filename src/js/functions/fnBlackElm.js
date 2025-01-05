@@ -8,4 +8,5 @@ export default function fnBlackElm(){
     document.getElementById("signalBlack").style.display="block"
 
     document.getElementById("buttonHome").style.backgroundColor="rgba(0, 0, 0, 0.5)"
+    document.getElementById("contNav").classList.add("black_blur")
 }
