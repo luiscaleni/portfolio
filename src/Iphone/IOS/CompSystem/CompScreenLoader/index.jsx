@@ -23,6 +23,7 @@ export default function ScreenLoader(){
                 </div>
                 <div id="copyright">
                     <p id="author">Portfolio: Luis Caleni Velasquez</p>
+                    <p id="versionDate">v. 1.5 - 05/01/2025</p>
                 </div>
             </div>
         </>

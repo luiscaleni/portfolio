@@ -59,6 +59,8 @@
     height: auto;
     bottom: 15vh;
     color: white;
+    font-size: 0.8em;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,9 +68,14 @@
 }
 #copyright #author {
     width: auto;
-      min-height: 1em;
-      margin: 0.1em;
-      font-size: 0.8em;
+    min-height: 1em;
+    margin: 0.1em;
+    font-size: 0.9em;
+}
+
+#copyright #versionDate {
+    color: white;
+    font-size: 0.8em;
 }
 
 @keyframes load {
