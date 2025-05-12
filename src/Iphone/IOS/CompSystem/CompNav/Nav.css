@@ -67,11 +67,14 @@
     flex-direction: row;
 }
 #cameraDI{
-    width: 0.5em; 
-    height: 0.5em;
-    margin: auto 0.5em auto 0.5em;
     border-radius: 100%;
     background: transparent;
+}
+.activeCamera{
+    width: 0.5em;
+    height: 0.5em;
+    margin: auto 0.5em;
+    background-color: linear-gradient(70deg,#008f39, #21eb21);
 }
 .contIconNavBar{
     width: auto;

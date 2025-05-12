@@ -3,7 +3,8 @@ export default function appCamera(){
     const contFSReplace = document.getElementById("contFSReplace")
     const activeCamera = document.getElementById("cameraDI")
     
-    activeCamera.style.background="linear-gradient(70deg,#008f39, #21eb21)"
+    activeCamera.classList.add("activeCamera")
+    
     videoDom.id="video"
     videoDom.autoplay="true"
     videoDom.playsInline="true"

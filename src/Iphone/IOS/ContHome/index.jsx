@@ -15,9 +15,9 @@ export default function ContHome(){
                         <CompContainerListApp elements={
                             <>
                                 <AppIcons name="curriculum" classNameApp="appImg" id="Curriculum" text="Curriculum" contTotalValue="home"/>
-                                <AppIcons name="camera" classNameApp="appImg" id="Camera" text="Camera" contTotalValue="home"/>
+                                <AppIcons name="youtube" classNameApp="appImg" id="Youtube" text="Reels CV" contTotalValue="home"/>
                                 <AppIcons name="photos" classNameApp="appImg" id="Photos" text="Photos" contTotalValue="home"/>
-                                <AppIcons name="youtube" classNameApp="appImg" id="Youtube" text="Youtube" contTotalValue="home"/>
+                                <AppIcons name="camera" classNameApp="appImg" id="Camera" text="Camera" contTotalValue="home"/>
                                 <AppIcons name="xcode" classNameApp="appImg" id="Atribution" text="Atributions" contTotalValue="home"/>
                                 <AppIcons name="calendar" classNameApp="appImg" id="Calendar" text="Calendar" contTotalValue="home"/>
                             </>
